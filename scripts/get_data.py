@@ -37,31 +37,22 @@ def get_comments_from_discussion(infilename):
                 previous_post_id = "NA"
 
             lines = [line.replace('\n', ' ') for line in lines]
-            text = "\n\n".join(lines[1:])
+            #text = "\n\n".join(lines[1:])
+            text = " <br/>".join(lines[1:])
 
             comment_data = [os.path.basename(infilename),debate_title, debate_description, article_title, post_id, username, previous_post_id, text]
             discussion_data.append(comment_data)
-            
+
         except:
             continue
 
     return discussion_data
-        
-def write_stripped_file(outfilename, article_title, content_article):
-    outdir = os.path.dirname(outfilename)
-    if not os.path.exists(outdir):
-        os.makedirs(outdir)
-    if not article_title.endswith("." or "?" or "!"):
-        article_title = article_title + "."
-    outfile = open(outfilename, "w")
-    outfile.write(article_title + "\n\n")
-    outfile.write(content_article)
-    outfile.close()
 
 
 ###############################################################################
 # Functions for getting information about propositions from CAT and NAF files #
 ###############################################################################
+
 
 def get_text_markable(markable_id, list_markables, list_tokens):
     '''
@@ -94,7 +85,7 @@ def get_sent_id(markable_id, list_markables, list_tokens):
 
 def get_full_sentence(sent_id, list_tokens):
     '''
-    Reads a CAT file and returns the full text of a sentence given its id 
+    Reads a CAT file and returns the full text of a sentence given its id
     '''
     sentence = ""
     for token in list_tokens:
@@ -110,12 +101,59 @@ def get_paragraph(sent_id, filename_article_naf):
     naf = KafNafParser(filename_article_naf)
     paragraph = ""
     for token in naf.get_tokens():
-        if sent_id == str(int(token.get_sent()) - 1):
+        if sent_id == token.get_sent():
+        #if sent_id == str(int(token.get_sent()) - 1): # sent id CAT different than NAF
             para_id = token.get_para()
     for token in naf.get_tokens():
         if token.get_para() == para_id:
             paragraph = paragraph + " " + token.get_text()
     return paragraph, para_id
+
+
+def get_paragraphs_sentences_naf(filename_article_naf):
+    '''
+    Reads a NAF file and returns a dictionary with all sentences for each paragraph {para id: [sentences]}
+    '''
+    naf = KafNafParser(filename_article_naf)
+    sentences = {}
+    sent_id = "1"
+    para_id = "1"
+    sentence = ""
+    for token in naf.get_tokens():
+        if sent_id == token.get_sent():
+            sentence = sentence + " " + token.get_text()
+        else:
+            if not para_id in sentences:
+                sentences[para_id] = [sentence]
+            else:
+                sentences[para_id].append(sentence)
+            sent_id = token.get_sent()
+            para_id = token.get_para()
+            sentence = token.get_text()
+    # Add last sentence
+    if not sentence in sentences[para_id]:
+        sentences[para_id].append(sentence)
+    return sentences
+
+def get_sentences_naf(filename_article_naf):
+    '''
+    Reads a NAF file and returns a dictionary with all sentences {sent id: string}
+    '''
+    naf = KafNafParser(filename_article_naf)
+    sentences = {}
+    sent_id = "1"
+    sentence = ""
+    for token in naf.get_tokens():
+        if sent_id == token.get_sent():
+            sentence = sentence + " " + token.get_text()
+        else:
+            sentences[sent_id] = sentence
+            sent_id = token.get_sent()
+            sentence = token.get_text()
+    # LAST SENTENCE MISSING?
+    #if not sentence in sentences[sent_id]:
+        #sentences[sent_id].append(sentence)
+    return sentences
 
 def get_propositions(filename_article_cat, filename_article_naf):
     '''
@@ -124,7 +162,7 @@ def get_propositions(filename_article_cat, filename_article_naf):
 
     propositions = []
     #paragraphs = {}
-    
+
     # Get basic information from CAT file (XML objects of tokens, markables and relations)
     infile = open(filename_article_cat, "r")
     raw = infile.read()
@@ -136,29 +174,29 @@ def get_propositions(filename_article_cat, filename_article_naf):
 
     # For each proposition (= CAT relation), get the texts of the event, argument(s), sentence, and paragraph
     for prop in list_propositions:
-        event_id = prop.find("source").get("m_id") 
-        event_text = get_text_markable(event_id, list_events, list_tokens) 
+        event_id = prop.find("source").get("m_id")
+        event_text = get_text_markable(event_id, list_events, list_tokens)
         list_target_arg = prop.findall("target")
         arguments_texts = []
         for argument in list_target_arg:
             arg_id = argument.get("m_id")
             argument_text = get_text_markable(arg_id, list_arguments, list_tokens)
             arguments_texts.append(argument_text)
-        sent_id = get_sent_id(event_id, list_events, list_tokens)                
+        sent_id = get_sent_id(event_id, list_events, list_tokens)
+        sent_id_naf = str(int(sent_id) + 1) # sent id CAT different than NAF
         sentence = get_full_sentence(sent_id, list_tokens)
-        paragraph, para_id = get_paragraph(sent_id, filename_article_naf)
+        paragraph, para_id = get_paragraph(sent_id_naf, filename_article_naf)
         propositions.append([event_text, arguments_texts, sentence, paragraph])
 
         #if para_id not in paragraphs:
             #paragraphs[para_id] = {"text":paragraph, "propositions":[[event_text, "ARGUMENTS", sentence]]}
         #else:
             #paragraphs[para_id]["propositions"].append([event_text, "ARGUMENTS", sentence])
-            
 
     infile.close()
-    
+
     return propositions#, paragraphs
-    
+
 
 #################
 # Main function #
@@ -170,11 +208,13 @@ def main(variant_C, variant_D):
         for subset in dirs:
 
             # Get all data for each comment in datasets variant D (for development set, crowdsourcing set, test set)
-            all_data = [["debate id", "debate title", "debate description", "article title", "post id", "username", "previous post id", "text comment", "text article", "text event", "arguments", "sentence", "paragraph"]]
+            #all_data = [["debate id", "debate title", "debate description", "article title", "post id", "username", "previous post id", "text comment", "text article", "text event", "arguments", "sentence", "paragraph"]]
+            #all_data = [["debate id", "debate title", "debate description", "article title", "post id", "username", "previous post id", "text comment", "text article", "sentence article", "paragraph article"]]
+            all_data = [["debate id", "debate title", "debate description", "article title", "post id", "username", "previous post id", "text comment", "text article", "paragraph id article", "sentence1", "sentence2", "sentence3", "sentence4", "sentence5", "sentence6", "sentence7"]]
             for filename in os.listdir(os.path.join(subdir,subset)):
                 if filename.endswith(".txt"):
-                    print "Processing:", filename
-                    
+                    print("Processing:", filename)
+
                     # Get text from corresponding article in dataset variant C
                     filename_article = os.path.join(variant_C,"original",subset,filename.replace("D", "C"))
                     infile = open(filename_article)
@@ -184,20 +224,16 @@ def main(variant_C, variant_D):
                     # Get data from each comment in dataset variant D
                     filename_discussion = os.path.join(subdir,subset,filename)
                     discussion_data = get_comments_from_discussion(filename_discussion)
-
-                        
-                    # Write stripped text to new folder for variant C (excluding debate description and title)
-                    article_title = discussion_data[0][3]
-                    outfilename = filename_article.replace("original", "stripped")
-                    if not os.path.exists(os.path.dirname(outfilename)):
-                        os.makedirs(os.path.dirname(outfilename))
-                    write_stripped_file(outfilename, article_title, content_article)
+                    # debate_title = discussion_data[0][1]
+                    # debate_description = discussion_data[0][2]
+                    # article_title = discussion_data[0][3]
 
                     # Get propositions from CAT file
                     if subset == "devel": # comment after experimenting
                         filename_article_cat = filename_article.replace("original", "CAT-annotated") + ".xml"
                         filename_article_naf = filename_article.replace("original", "NAF-tokenized")
                         propositions = get_propositions(filename_article_cat, filename_article_naf)
+                        sentences = get_sentences_naf(filename_article_naf)
                     else:
                         continue
 
@@ -206,14 +242,31 @@ def main(variant_C, variant_D):
                     for comment_data in discussion_data:
                         comment_data.append(content_article)
 
+                        # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH PARAGRAPH (WITH SEPARATE SENTENCES)
+                        paragraphs = get_paragraphs_sentences_naf(filename_article_naf)
+                        for par_id in paragraphs:
+                            sentences = paragraphs[par_id]
+                            to_add = comment_data + [par_id] + sentences
+                            all_data.append(to_add)
+
+
+
+
+                        # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH SENTENCE IN ARTICLE
+                        #for sent_id in sentences:
+                            #sentence = sentences[sent_id]
+                            #paragraph, para_id = get_paragraph(sent_id, filename_article_naf)
+                            #to_add = comment_data + [sentence, paragraph]
+                            #print(to_add)
+                            #all_data.append(to_add)
 
                         # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH PROPOSITION
-                        for proposition in propositions:
-                            text_event = proposition[0]
-                            arguments = proposition[1] ## list; how to process this?
-                            sentence = proposition[2]
-                            paragraph = proposition[3]
-                            all_data.append(comment_data + proposition)
+                        #for proposition in propositions:
+                            #text_event = proposition[0]
+                            #arguments = proposition[1] ## list; how to process this?
+                            #sentence = proposition[2]
+                            #paragraph = proposition[3]
+                            #all_data.append(comment_data + proposition)
 
                         # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH PARAGRAPH (NOT FINISHED YET -- PROBABLY WON'T USE)
                         #for para_id in paragraphs:
@@ -226,22 +279,17 @@ def main(variant_C, variant_D):
                                 #all_data.append(to_add)
                             #else:
                                 #print len(propositions)
-                                                
 
             # Write the data to csv file in directory
             outdir_csv = os.path.join(variant_D, "csv")
             if not os.path.exists(outdir_csv):
                 os.makedirs(outdir_csv)
             outputfile = os.path.join(outdir_csv, subset + ".csv")
-            #outputfile = os.path.join(subdir, subset, "comments_data.csv")
-            with open(outputfile, "wb") as f:
+            # outputfile = os.path.join(subdir, subset, "comments_data.csv")
+            with open(outputfile, "w") as f:
                 writer = csv.writer(f, quoting=csv.QUOTE_ALL)
                 writer.writerows(all_data)
 
-    print "Done"
-                    
+    print("Done")
 
 main(variant_C, variant_D)
-
-       
-
