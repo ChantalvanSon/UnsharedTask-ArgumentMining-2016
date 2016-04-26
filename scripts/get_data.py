@@ -11,7 +11,24 @@ variant_C = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantC"
 variant_D = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantD"
 
 
+##############################################################################
+# Function for getting information from about the comments in the discussion #
+##############################################################################
+
 def get_comments_from_discussion(infilename):
+    """
+    Reads the discussion files (VariantD) from the data provided for the ACL Unshared Task on Argument Mining and
+    returns a list with information about each comment in the discussion [[info_comment1], [info_comment2]], that is:
+    - corresponding filename
+    - debate title
+    - debate description
+    - article title
+    - post id
+    - username
+    - previous post id (if it is a reaction to another comment) or NA
+    - text of comment
+    """
+
     discussion_data = []
     infile = open(infilename, "r")
     content = infile.read()
@@ -23,8 +40,7 @@ def get_comments_from_discussion(infilename):
     article_title = lines[2].replace("Article title: ", "").replace("\n", "")
     comments[0] = "#" + comments[0].split("#")[1] # remove debate title etc. from first comment
 
-
-    # For each comment, get the post id (unique within discussion), username, previous post id (if it is a reaction to another comment), and the text of the comment
+    # Get all information for each comment
     for comment in comments:
         lines = comment.split("\n\n")
         try:
@@ -55,6 +71,7 @@ def get_comments_from_discussion(infilename):
 
 
 def get_relevant_sentences(filename_article_cat):
+    """Finds all sentences that contain a COMMENTED_UPON markable in a CAT file and returns a list of sentences"""
     relevant_sentences = []
     infile = open(filename_article_cat, "r")
     raw = infile.read()
@@ -73,11 +90,14 @@ def get_relevant_sentences(filename_article_cat):
 
 def get_propositions(filename_article_cat, filename_article_naf):
     '''
-    Returns a list of all annotated propositions in a CAT file, with for each proposition the texts of the event, argument(s), sentence, and paragraph
+    Returns a list of all annotated propositions in a CAT file, with for each proposition:
+     - the event (string)
+     - argument(s) (list) -> should be adapted
+     - sentence (string)
+     - paragraph (string)
     '''
 
     propositions = []
-    #paragraphs = {}
 
     # Get basic information from CAT file (XML objects of tokens, markables and relations)
     infile = open(filename_article_cat, "r")
@@ -104,21 +124,16 @@ def get_propositions(filename_article_cat, filename_article_naf):
         paragraph, para_id = get_paragraph(sent_id_naf, filename_article_naf)
         propositions.append([event_text, arguments_texts, sentence, paragraph])
 
-        #if para_id not in paragraphs:
-            #paragraphs[para_id] = {"text":paragraph, "propositions":[[event_text, "ARGUMENTS", sentence]]}
-        #else:
-            #paragraphs[para_id]["propositions"].append([event_text, "ARGUMENTS", sentence])
-
     infile.close()
 
-    return propositions#, paragraphs
+    return propositions
 
 
 #################
 # Main function #
 #################
 
-def main(variant_C, variant_D):
+def main(variant_C, variant_D, option):
     originals_D = os.path.join(variant_D, "original")
     for subdir, dirs, files in os.walk(originals_D):
         for subset in dirs:
@@ -154,53 +169,58 @@ def main(variant_C, variant_D):
                         continue
 
 
-                    # Collect all data and turn into one list (for writing the csv) ######################### EDIT HERE!
+                    # Collect all data and turn into one list (for writing the csv)
                     for comment_data in discussion_data:
                         comment_data.append(content_article)
 
                         # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH PARAGRAPH (WITH SEPARATE SENTENCES)
-                        paragraphs = get_paragraphs_sentences_naf(filename_article_naf)
-                        for par_id in paragraphs:
-                            sentences = paragraphs[par_id]
-                            to_add = comment_data + [par_id] + sentences
-                            all_data.append(to_add)
-
-
-
+                        if option == "1":
+                            paragraphs = get_paragraphs_sentences_naf(filename_article_naf)
+                            for par_id in paragraphs:
+                                sentences = paragraphs[par_id]
+                                to_add = comment_data + [par_id] + sentences
+                                all_data.append(to_add)
 
                         # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH SENTENCE IN ARTICLE
-                        #for sent_id in sentences:
-                            #sentence = sentences[sent_id]
-                            #paragraph, para_id = get_paragraph(sent_id, filename_article_naf)
-                            #to_add = comment_data + [sentence, paragraph]
-                            #print(to_add)
-                            #all_data.append(to_add)
+                        if option == "2":
+                            for sent_id in sentences:
+                                sentence = sentences[sent_id]
+                                paragraph, para_id = get_paragraph(sent_id, filename_article_naf)
+                                to_add = comment_data + [sentence, paragraph]
+                                all_data.append(to_add)
 
                         # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH PROPOSITION
-                        #for proposition in propositions:
-                            #text_event = proposition[0]
-                            #arguments = proposition[1] ## list; how to process this?
-                            #sentence = proposition[2]
-                            #paragraph = proposition[3]
-                            #all_data.append(comment_data + proposition)
+                        if option == "3":
+                            for proposition in propositions:
+                                text_event = proposition[0]
+                                arguments = proposition[1] ## list; how to process this?
+                                sentence = proposition[2]
+                                paragraph = proposition[3]
+                                all_data.append(comment_data + proposition)
+
+                        # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH RELEVANT SENTENCE
+                        #if option == "4":
+
 
                         # CREATE SEPARATE DATA ENTRIES (LINES) FOR EACH PARAGRAPH (NOT FINISHED YET -- PROBABLY WON'T USE)
-                        #for para_id in paragraphs:
-                            #paragraph = paragraphs[para_id]["text"]
-                            #propositions = paragraphs[para_id]["propositions"]
-                            #if len(propositions) == 3:
-                                #list_propositions = list(itertools.chain(*propositions))
-                                #to_add = comment_data.append(paragraph) #+ list_propositions
-                                #print to_add + list_propositions
-                                #all_data.append(to_add)
-                            #else:
-                                #print len(propositions)
+                        #if option == "X":
+                            #for para_id in paragraphs:
+                                #paragraph = paragraphs[para_id]["text"]
+                                #propositions = paragraphs[para_id]["propositions"]
+                                #if len(propositions) == 3:
+                                    #list_propositions = list(itertools.chain(*propositions))
+                                    #to_add = comment_data.append(paragraph) #+ list_propositions
+                                    #print to_add + list_propositions
+                                    #all_data.append(to_add)
+                                #else:
+                                    #print len(propositions)
 
             # Write the data to csv file in directory
             outdir_csv = os.path.join(variant_D, "csv")
             if not os.path.exists(outdir_csv):
                 os.makedirs(outdir_csv)
-            outputfile = os.path.join(outdir_csv, subset + ".csv")
+            outputfile = os.path.join(outdir_csv, subset + option + ".csv")
+            print(outputfile)
             # outputfile = os.path.join(subdir, subset, "comments_data.csv")
             with open(outputfile, "w") as f:
                 writer = csv.writer(f, quoting=csv.QUOTE_ALL)
@@ -208,4 +228,4 @@ def main(variant_C, variant_D):
 
     print("Done")
 
-main(variant_C, variant_D)
+main(variant_C, variant_D, "1")
