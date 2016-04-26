@@ -1,0 +1,664 @@
+<Document doc_name="Dd003#5.txt">
+<token t_id="1" sentence="0" number="0">COMMENT:</token>
+<token t_id="2" sentence="0" number="1">I</token>
+<token t_id="3" sentence="0" number="2">have</token>
+<token t_id="4" sentence="0" number="3">no</token>
+<token t_id="5" sentence="0" number="4">problem</token>
+<token t_id="6" sentence="0" number="5">with</token>
+<token t_id="7" sentence="0" number="6">Happy</token>
+<token t_id="8" sentence="0" number="7">Hours.</token>
+<token t_id="9" sentence="0" number="8">I</token>
+<token t_id="10" sentence="0" number="9">have</token>
+<token t_id="11" sentence="0" number="10">a</token>
+<token t_id="12" sentence="0" number="11">huge</token>
+<token t_id="13" sentence="0" number="12">problem</token>
+<token t_id="14" sentence="0" number="13">with</token>
+<token t_id="15" sentence="0" number="14">drunken</token>
+<token t_id="16" sentence="0" number="15">people</token>
+<token t_id="17" sentence="0" number="16">in</token>
+<token t_id="18" sentence="0" number="17">public</token>
+<token t_id="19" sentence="0" number="18">trying</token>
+<token t_id="20" sentence="0" number="19">to</token>
+<token t_id="21" sentence="0" number="20">control</token>
+<token t_id="22" sentence="0" number="21">a</token>
+<token t_id="23" sentence="0" number="22">moving</token>
+<token t_id="24" sentence="0" number="23">vehicle.</token>
+<token t_id="25" sentence="0" number="24">We</token>
+<token t_id="26" sentence="0" number="25">kill</token>
+<token t_id="27" sentence="0" number="26">35,000</token>
+<token t_id="28" sentence="0" number="27">people</token>
+<token t_id="29" sentence="0" number="28">on</token>
+<token t_id="30" sentence="0" number="29">the</token>
+<token t_id="31" sentence="0" number="30">roads</token>
+<token t_id="32" sentence="0" number="31">each</token>
+<token t_id="33" sentence="0" number="32">year,</token>
+<token t_id="34" sentence="0" number="33">making</token>
+<token t_id="35" sentence="0" number="34">terrorism</token>
+<token t_id="36" sentence="0" number="35">deaths</token>
+<token t_id="37" sentence="0" number="36">look</token>
+<token t_id="38" sentence="0" number="37">like</token>
+<token t_id="39" sentence="0" number="38">a</token>
+<token t_id="40" sentence="0" number="39">picnic</token>
+<token t_id="41" sentence="0" number="40">from</token>
+<token t_id="42" sentence="0" number="41">a</token>
+<token t_id="43" sentence="0" number="42">public</token>
+<token t_id="44" sentence="0" number="43">health</token>
+<token t_id="45" sentence="0" number="44">perspective</token>
+<token t_id="46" sentence="0" number="45">(though</token>
+<token t_id="47" sentence="0" number="46">clearly</token>
+<token t_id="48" sentence="0" number="47">not</token>
+<token t_id="49" sentence="0" number="48">to</token>
+<token t_id="50" sentence="0" number="49">those</token>
+<token t_id="51" sentence="0" number="50">affected.)</token>
+<token t_id="52" sentence="0" number="51">Perhaps</token>
+<token t_id="53" sentence="0" number="52">a</token>
+<token t_id="54" sentence="0" number="53">substantial</token>
+<token t_id="55" sentence="0" number="54">part</token>
+<token t_id="56" sentence="0" number="55">of</token>
+<token t_id="57" sentence="0" number="56">the</token>
+<token t_id="58" sentence="0" number="57">proceeds</token>
+<token t_id="59" sentence="0" number="58">from</token>
+<token t_id="60" sentence="0" number="59">liquor</token>
+<token t_id="61" sentence="0" number="60">licensing</token>
+<token t_id="62" sentence="0" number="61">should</token>
+<token t_id="63" sentence="0" number="62">go</token>
+<token t_id="64" sentence="0" number="63">to</token>
+<token t_id="65" sentence="0" number="64">the</token>
+<token t_id="66" sentence="0" number="65">hiring</token>
+<token t_id="67" sentence="0" number="66">of</token>
+<token t_id="68" sentence="0" number="67">additional</token>
+<token t_id="69" sentence="0" number="68">cops</token>
+<token t_id="70" sentence="0" number="69">to</token>
+<token t_id="71" sentence="0" number="70">station</token>
+<token t_id="72" sentence="0" number="71">in</token>
+<token t_id="73" sentence="0" number="72">neighborhoods</token>
+<token t_id="74" sentence="0" number="73">where</token>
+<token t_id="75" sentence="0" number="74">bars</token>
+<token t_id="76" sentence="0" number="75">are</token>
+<token t_id="77" sentence="0" number="76">common.</token>
+<token t_id="78" sentence="0" number="77">One</token>
+<token t_id="79" sentence="0" number="78">could</token>
+<token t_id="80" sentence="0" number="79">also</token>
+<token t_id="81" sentence="0" number="80">require</token>
+<token t_id="82" sentence="0" number="81">businesses</token>
+<token t_id="83" sentence="0" number="82">that</token>
+<token t_id="84" sentence="0" number="83">sell</token>
+<token t_id="85" sentence="0" number="84">alcohol</token>
+<token t_id="86" sentence="0" number="85">to</token>
+<token t_id="87" sentence="0" number="86">have</token>
+<token t_id="88" sentence="0" number="87">breathalyzers</token>
+<token t_id="89" sentence="0" number="88">and</token>
+<token t_id="90" sentence="0" number="89">post</token>
+<token t_id="91" sentence="0" number="90">a</token>
+<token t_id="92" sentence="0" number="91">sign</token>
+<token t_id="93" sentence="0" number="92">saying</token>
+<token t_id="94" sentence="0" number="93">that</token>
+<token t_id="95" sentence="0" number="94">by</token>
+<token t_id="96" sentence="0" number="95">entering</token>
+<token t_id="97" sentence="0" number="96">a</token>
+<token t_id="98" sentence="0" number="97">customer</token>
+<token t_id="99" sentence="0" number="98">agreed</token>
+<token t_id="100" sentence="0" number="99">to</token>
+<token t_id="101" sentence="0" number="100">a</token>
+<token t_id="102" sentence="0" number="101">breathalyzer</token>
+<token t_id="103" sentence="0" number="102">test</token>
+<token t_id="104" sentence="0" number="103">upon</token>
+<token t_id="105" sentence="0" number="104">leaving.</token>
+<token t_id="106" sentence="0" number="105">In</token>
+<token t_id="107" sentence="0" number="106">general,</token>
+<token t_id="108" sentence="0" number="107">however,</token>
+<token t_id="109" sentence="0" number="108">what</token>
+<token t_id="110" sentence="0" number="109">is</token>
+<token t_id="111" sentence="0" number="110">needed</token>
+<token t_id="112" sentence="0" number="111">is</token>
+<token t_id="113" sentence="0" number="112">much</token>
+<token t_id="114" sentence="0" number="113">greater</token>
+<token t_id="115" sentence="0" number="114">enforcement</token>
+<token t_id="116" sentence="0" number="115">of</token>
+<token t_id="117" sentence="0" number="116">our</token>
+<token t_id="118" sentence="0" number="117">traffic</token>
+<token t_id="119" sentence="0" number="118">laws</token>
+<token t_id="120" sentence="0" number="119">and</token>
+<token t_id="121" sentence="0" number="120">penalties</token>
+<token t_id="122" sentence="0" number="121">that</token>
+<token t_id="123" sentence="0" number="122">have</token>
+<token t_id="124" sentence="0" number="123">a</token>
+<token t_id="125" sentence="0" number="124">chance</token>
+<token t_id="126" sentence="0" number="125">to</token>
+<token t_id="127" sentence="0" number="126">be</token>
+<token t_id="128" sentence="0" number="127">effective</token>
+<token t_id="129" sentence="0" number="128">as</token>
+<token t_id="130" sentence="0" number="129">a</token>
+<token t_id="131" sentence="0" number="130">deterrent</token>
+<token t_id="132" sentence="0" number="131">across</token>
+<token t_id="133" sentence="0" number="132">the</token>
+<token t_id="134" sentence="0" number="133">board,</token>
+<token t_id="135" sentence="0" number="134">including</token>
+<token t_id="136" sentence="0" number="135">mandatory</token>
+<token t_id="137" sentence="0" number="136">jail</token>
+<token t_id="138" sentence="0" number="137">time</token>
+<token t_id="139" sentence="0" number="138">for</token>
+<token t_id="140" sentence="0" number="139">a</token>
+<token t_id="141" sentence="0" number="140">D.U.I.</token>
+<token t_id="142" sentence="1" number="141">Responsible</token>
+<token t_id="143" sentence="1" number="142">Service</token>
+<token t_id="144" sentence="1" number="143">Makes</token>
+<token t_id="145" sentence="1" number="144">Sense</token>
+<token t_id="146" sentence="1" number="145">,</token>
+<token t_id="147" sentence="1" number="146">Happy</token>
+<token t_id="148" sentence="1" number="147">Hour</token>
+<token t_id="149" sentence="1" number="148">Bans</token>
+<token t_id="150" sentence="1" number="149">`</token>
+<token t_id="151" sentence="1" number="150">t</token>
+<token t_id="152" sentence="1" number="151">.</token>
+<token t_id="153" sentence="2" number="152">In</token>
+<token t_id="154" sentence="2" number="153">the</token>
+<token t_id="155" sentence="2" number="154">beginning</token>
+<token t_id="156" sentence="2" number="155">of</token>
+<token t_id="157" sentence="2" number="156">my</token>
+<token t_id="158" sentence="2" number="157">career</token>
+<token t_id="159" sentence="2" number="158">as</token>
+<token t_id="160" sentence="2" number="159">a</token>
+<token t_id="161" sentence="2" number="160">bartender</token>
+<token t_id="162" sentence="2" number="161">,</token>
+<token t_id="163" sentence="2" number="162">I</token>
+<token t_id="164" sentence="2" number="163">worked</token>
+<token t_id="165" sentence="2" number="164">in</token>
+<token t_id="166" sentence="2" number="165">a</token>
+<token t_id="167" sentence="2" number="166">solid</token>
+<token t_id="168" sentence="2" number="167">establishment</token>
+<token t_id="169" sentence="2" number="168">with</token>
+<token t_id="170" sentence="2" number="169">great</token>
+<token t_id="171" sentence="2" number="170">food</token>
+<token t_id="172" sentence="2" number="171">and</token>
+<token t_id="173" sentence="2" number="172">beverages</token>
+<token t_id="174" sentence="2" number="173">that</token>
+<token t_id="175" sentence="2" number="174">offered</token>
+<token t_id="176" sentence="2" number="175">a</token>
+<token t_id="177" sentence="2" number="176">happy</token>
+<token t_id="178" sentence="2" number="177">hour</token>
+<token t_id="179" sentence="2" number="178">.</token>
+<token t_id="180" sentence="3" number="179">I</token>
+<token t_id="181" sentence="3" number="180">appreciated</token>
+<token t_id="182" sentence="3" number="181">it</token>
+<token t_id="183" sentence="3" number="182">because</token>
+<token t_id="184" sentence="3" number="183">it</token>
+<token t_id="185" sentence="3" number="184">brought</token>
+<token t_id="186" sentence="3" number="185">in</token>
+<token t_id="187" sentence="3" number="186">clientele</token>
+<token t_id="188" sentence="3" number="187">fairly</token>
+<token t_id="189" sentence="3" number="188">early</token>
+<token t_id="190" sentence="3" number="189">in</token>
+<token t_id="191" sentence="3" number="190">the</token>
+<token t_id="192" sentence="3" number="191">evening</token>
+<token t_id="193" sentence="3" number="192">when</token>
+<token t_id="194" sentence="3" number="193">bars</token>
+<token t_id="195" sentence="3" number="194">are</token>
+<token t_id="196" sentence="3" number="195">often</token>
+<token t_id="197" sentence="3" number="196">quiet</token>
+<token t_id="198" sentence="3" number="197">.</token>
+<token t_id="199" sentence="4" number="198">During</token>
+<token t_id="200" sentence="4" number="199">that</token>
+<token t_id="201" sentence="4" number="200">hour</token>
+<token t_id="202" sentence="4" number="201">,</token>
+<token t_id="203" sentence="4" number="202">the</token>
+<token t_id="204" sentence="4" number="203">average</token>
+<token t_id="205" sentence="4" number="204">check</token>
+<token t_id="206" sentence="4" number="205">was</token>
+<token t_id="207" sentence="4" number="206">two</token>
+<token t_id="208" sentence="4" number="207">drinks</token>
+<token t_id="209" sentence="4" number="208">per</token>
+<token t_id="210" sentence="4" number="209">person</token>
+<token t_id="211" sentence="4" number="210">,</token>
+<token t_id="212" sentence="4" number="211">and</token>
+<token t_id="213" sentence="4" number="212">they</token>
+<token t_id="214" sentence="4" number="213">frequently</token>
+<token t_id="215" sentence="4" number="214">would</token>
+<token t_id="216" sentence="4" number="215">order</token>
+<token t_id="217" sentence="4" number="216">an</token>
+<token t_id="218" sentence="4" number="217">appetizer</token>
+<token t_id="219" sentence="4" number="218">.</token>
+<token t_id="220" sentence="5" number="219">After</token>
+<token t_id="221" sentence="5" number="220">it</token>
+<token t_id="222" sentence="5" number="221">was</token>
+<token t_id="223" sentence="5" number="222">over</token>
+<token t_id="224" sentence="5" number="223">,</token>
+<token t_id="225" sentence="5" number="224">some</token>
+<token t_id="226" sentence="5" number="225">guests</token>
+<token t_id="227" sentence="5" number="226">stayed</token>
+<token t_id="228" sentence="5" number="227">on</token>
+<token t_id="229" sentence="5" number="228">and</token>
+<token t_id="230" sentence="5" number="229">ordered</token>
+<token t_id="231" sentence="5" number="230">a</token>
+<token t_id="232" sentence="5" number="231">meal</token>
+<token t_id="233" sentence="5" number="232">.</token>
+<token t_id="234" sentence="6" number="233">But</token>
+<token t_id="235" sentence="6" number="234">more</token>
+<token t_id="236" sentence="6" number="235">often</token>
+<token t_id="237" sentence="6" number="236">than</token>
+<token t_id="238" sentence="6" number="237">not</token>
+<token t_id="239" sentence="6" number="238">,</token>
+<token t_id="240" sentence="6" number="239">many</token>
+<token t_id="241" sentence="6" number="240">of</token>
+<token t_id="242" sentence="6" number="241">the</token>
+<token t_id="243" sentence="6" number="242">guests</token>
+<token t_id="244" sentence="6" number="243">made</token>
+<token t_id="245" sentence="6" number="244">their</token>
+<token t_id="246" sentence="6" number="245">way</token>
+<token t_id="247" sentence="6" number="246">home</token>
+<token t_id="248" sentence="6" number="247">without</token>
+<token t_id="249" sentence="6" number="248">much</token>
+<token t_id="250" sentence="6" number="249">fanfare</token>
+<token t_id="251" sentence="6" number="250">.</token>
+<token t_id="252" sentence="7" number="251">Yet</token>
+<token t_id="253" sentence="7" number="252">,</token>
+<token t_id="254" sentence="7" number="253">happy</token>
+<token t_id="255" sentence="7" number="254">hour</token>
+<token t_id="256" sentence="7" number="255">or</token>
+<token t_id="257" sentence="7" number="256">not</token>
+<token t_id="258" sentence="7" number="257">,</token>
+<token t_id="259" sentence="7" number="258">the</token>
+<token t_id="260" sentence="7" number="259">one</token>
+<token t_id="261" sentence="7" number="260">thing</token>
+<token t_id="262" sentence="7" number="261">that</token>
+<token t_id="263" sentence="7" number="262">I</token>
+<token t_id="264" sentence="7" number="263">was</token>
+<token t_id="265" sentence="7" number="264">always</token>
+<token t_id="266" sentence="7" number="265">diligent</token>
+<token t_id="267" sentence="7" number="266">about</token>
+<token t_id="268" sentence="7" number="267">was</token>
+<token t_id="269" sentence="7" number="268">serving</token>
+<token t_id="270" sentence="7" number="269">water</token>
+<token t_id="271" sentence="7" number="270">and</token>
+<token t_id="272" sentence="7" number="271">frequently</token>
+<token t_id="273" sentence="7" number="272">checking</token>
+<token t_id="274" sentence="7" number="273">in</token>
+<token t_id="275" sentence="7" number="274">with</token>
+<token t_id="276" sentence="7" number="275">my</token>
+<token t_id="277" sentence="7" number="276">guests</token>
+<token t_id="278" sentence="7" number="277">to</token>
+<token t_id="279" sentence="7" number="278">make</token>
+<token t_id="280" sentence="7" number="279">sure</token>
+<token t_id="281" sentence="7" number="280">that</token>
+<token t_id="282" sentence="7" number="281">they</token>
+<token t_id="283" sentence="7" number="282">were</token>
+<token t_id="284" sentence="7" number="283">in</token>
+<token t_id="285" sentence="7" number="284">good</token>
+<token t_id="286" sentence="7" number="285">shape</token>
+<token t_id="287" sentence="7" number="286">.</token>
+<token t_id="288" sentence="8" number="287">One</token>
+<token t_id="289" sentence="8" number="288">of</token>
+<token t_id="290" sentence="8" number="289">the</token>
+<token t_id="291" sentence="8" number="290">owners</token>
+<token t_id="292" sentence="8" number="291">was</token>
+<token t_id="293" sentence="8" number="292">always</token>
+<token t_id="294" sentence="8" number="293">on-premise</token>
+<token t_id="295" sentence="8" number="294">and</token>
+<token t_id="296" sentence="8" number="295">frequently</token>
+<token t_id="297" sentence="8" number="296">checked</token>
+<token t_id="298" sentence="8" number="297">in</token>
+<token t_id="299" sentence="8" number="298">at</token>
+<token t_id="300" sentence="8" number="299">the</token>
+<token t_id="301" sentence="8" number="300">bar</token>
+<token t_id="302" sentence="8" number="301">to</token>
+<token t_id="303" sentence="8" number="302">ensure</token>
+<token t_id="304" sentence="8" number="303">all</token>
+<token t_id="305" sentence="8" number="304">was</token>
+<token t_id="306" sentence="8" number="305">going</token>
+<token t_id="307" sentence="8" number="306">well</token>
+<token t_id="308" sentence="8" number="307">.</token>
+<token t_id="309" sentence="9" number="308">In</token>
+<token t_id="310" sentence="9" number="309">general</token>
+<token t_id="311" sentence="9" number="310">,</token>
+<token t_id="312" sentence="9" number="311">offering</token>
+<token t_id="313" sentence="9" number="312">food</token>
+<token t_id="314" sentence="9" number="313">and</token>
+<token t_id="315" sentence="9" number="314">water</token>
+<token t_id="316" sentence="9" number="315">and</token>
+<token t_id="317" sentence="9" number="316">frequent</token>
+<token t_id="318" sentence="9" number="317">check-in</token>
+<token t_id="319" sentence="9" number="318">'s</token>
+<token t_id="320" sentence="9" number="319">with</token>
+<token t_id="321" sentence="9" number="320">one</token>
+<token t_id="322" sentence="9" number="321">'s</token>
+<token t_id="323" sentence="9" number="322">patrons</token>
+<token t_id="324" sentence="9" number="323">is</token>
+<token t_id="325" sentence="9" number="324">not</token>
+<token t_id="326" sentence="9" number="325">just</token>
+<token t_id="327" sentence="9" number="326">a</token>
+<token t_id="328" sentence="9" number="327">good</token>
+<token t_id="329" sentence="9" number="328">preventative</token>
+<token t_id="330" sentence="9" number="329">--</token>
+<token t_id="331" sentence="9" number="330">at</token>
+<token t_id="332" sentence="9" number="331">the</token>
+<token t_id="333" sentence="9" number="332">core</token>
+<token t_id="334" sentence="9" number="333">,</token>
+<token t_id="335" sentence="9" number="334">it</token>
+<token t_id="336" sentence="9" number="335">'s</token>
+<token t_id="337" sentence="9" number="336">simply</token>
+<token t_id="338" sentence="9" number="337">responsible</token>
+<token t_id="339" sentence="9" number="338">hospitality</token>
+<token t_id="340" sentence="9" number="339">.</token>
+<token t_id="341" sentence="10" number="340">At</token>
+<token t_id="342" sentence="10" number="341">this</token>
+<token t_id="343" sentence="10" number="342">point</token>
+<token t_id="344" sentence="10" number="343">in</token>
+<token t_id="345" sentence="10" number="344">my</token>
+<token t_id="346" sentence="10" number="345">career</token>
+<token t_id="347" sentence="10" number="346">as</token>
+<token t_id="348" sentence="10" number="347">an</token>
+<token t_id="349" sentence="10" number="348">bar</token>
+<token t_id="350" sentence="10" number="349">owner</token>
+<token t_id="351" sentence="10" number="350">,</token>
+<token t_id="352" sentence="10" number="351">I</token>
+<token t_id="353" sentence="10" number="352">can</token>
+<token t_id="354" sentence="10" number="353">appreciate</token>
+<token t_id="355" sentence="10" number="354">it</token>
+<token t_id="356" sentence="10" number="355">for</token>
+<token t_id="357" sentence="10" number="356">similar</token>
+<token t_id="358" sentence="10" number="357">reasons</token>
+<token t_id="359" sentence="10" number="358">.</token>
+<token t_id="360" sentence="11" number="359">From</token>
+<token t_id="361" sentence="11" number="360">a</token>
+<token t_id="362" sentence="11" number="361">financial</token>
+<token t_id="363" sentence="11" number="362">perspective</token>
+<token t_id="364" sentence="11" number="363">,</token>
+<token t_id="365" sentence="11" number="364">bars</token>
+<token t_id="366" sentence="11" number="365">can</token>
+<token t_id="367" sentence="11" number="366">often</token>
+<token t_id="368" sentence="11" number="367">be</token>
+<token t_id="369" sentence="11" number="368">fairly</token>
+<token t_id="370" sentence="11" number="369">quiet</token>
+<token t_id="371" sentence="11" number="370">places</token>
+<token t_id="372" sentence="11" number="371">the</token>
+<token t_id="373" sentence="11" number="372">first</token>
+<token t_id="374" sentence="11" number="373">hour</token>
+<token t_id="375" sentence="11" number="374">or</token>
+<token t_id="376" sentence="11" number="375">two</token>
+<token t_id="377" sentence="11" number="376">after</token>
+<token t_id="378" sentence="11" number="377">opening</token>
+<token t_id="379" sentence="11" number="378">.</token>
+<token t_id="380" sentence="12" number="379">Now</token>
+<token t_id="381" sentence="12" number="380">,</token>
+<token t_id="382" sentence="12" number="381">when</token>
+<token t_id="383" sentence="12" number="382">various</token>
+<token t_id="384" sentence="12" number="383">states</token>
+<token t_id="385" sentence="12" number="384">are</token>
+<token t_id="386" sentence="12" number="385">considering</token>
+<token t_id="387" sentence="12" number="386">a</token>
+<token t_id="388" sentence="12" number="387">minimum</token>
+<token t_id="389" sentence="12" number="388">wage</token>
+<token t_id="390" sentence="12" number="389">increase</token>
+<token t_id="391" sentence="12" number="390">to</token>
+<token t_id="392" sentence="12" number="391">$</token>
+<token t_id="393" sentence="12" number="392">15</token>
+<token t_id="394" sentence="12" number="393">an</token>
+<token t_id="395" sentence="12" number="394">hour</token>
+<token t_id="396" sentence="12" number="395">,</token>
+<token t_id="397" sentence="12" number="396">a</token>
+<token t_id="398" sentence="12" number="397">short</token>
+<token t_id="399" sentence="12" number="398">selection</token>
+<token t_id="400" sentence="12" number="399">of</token>
+<token t_id="401" sentence="12" number="400">drinks</token>
+<token t_id="402" sentence="12" number="401">offered</token>
+<token t_id="403" sentence="12" number="402">at</token>
+<token t_id="404" sentence="12" number="403">a</token>
+<token t_id="405" sentence="12" number="404">slight</token>
+<token t_id="406" sentence="12" number="405">discount</token>
+<token t_id="407" sentence="12" number="406">can</token>
+<token t_id="408" sentence="12" number="407">help</token>
+<token t_id="409" sentence="12" number="408">to</token>
+<token t_id="410" sentence="12" number="409">stimulate</token>
+<token t_id="411" sentence="12" number="410">business</token>
+<token t_id="412" sentence="12" number="411">and</token>
+<token t_id="413" sentence="12" number="412">offset</token>
+<token t_id="414" sentence="12" number="413">costs</token>
+<token t_id="415" sentence="12" number="414">.</token>
+<token t_id="416" sentence="13" number="415">It</token>
+<token t_id="417" sentence="13" number="416">'s</token>
+<token t_id="418" sentence="13" number="417">a</token>
+<token t_id="419" sentence="13" number="418">bit</token>
+<token t_id="420" sentence="13" number="419">narrowminded</token>
+<token t_id="421" sentence="13" number="420">to</token>
+<token t_id="422" sentence="13" number="421">think</token>
+<token t_id="423" sentence="13" number="422">that</token>
+<token t_id="424" sentence="13" number="423">a</token>
+<token t_id="425" sentence="13" number="424">happy</token>
+<token t_id="426" sentence="13" number="425">hour</token>
+<token t_id="427" sentence="13" number="426">ban</token>
+<token t_id="428" sentence="13" number="427">is</token>
+<token t_id="429" sentence="13" number="428">going</token>
+<token t_id="430" sentence="13" number="429">to</token>
+<token t_id="431" sentence="13" number="430">drastically</token>
+<token t_id="432" sentence="13" number="431">reduce</token>
+<token t_id="433" sentence="13" number="432">problems</token>
+<token t_id="434" sentence="13" number="433">.</token>
+<token t_id="435" sentence="14" number="434">An</token>
+<token t_id="436" sentence="14" number="435">establishment</token>
+<token t_id="437" sentence="14" number="436">that</token>
+<token t_id="438" sentence="14" number="437">offers</token>
+<token t_id="439" sentence="14" number="438">food</token>
+<token t_id="440" sentence="14" number="439">can</token>
+<token t_id="441" sentence="14" number="440">avoid</token>
+<token t_id="442" sentence="14" number="441">happy</token>
+<token t_id="443" sentence="14" number="442">hour</token>
+<token t_id="444" sentence="14" number="443">restrictions</token>
+<token t_id="445" sentence="14" number="444">by</token>
+<token t_id="446" sentence="14" number="445">leaving</token>
+<token t_id="447" sentence="14" number="446">their</token>
+<token t_id="448" sentence="14" number="447">drinks</token>
+<token t_id="449" sentence="14" number="448">at</token>
+<token t_id="450" sentence="14" number="449">full-price</token>
+<token t_id="451" sentence="14" number="450">and</token>
+<token t_id="452" sentence="14" number="451">discounting</token>
+<token t_id="453" sentence="14" number="452">their</token>
+<token t_id="454" sentence="14" number="453">food</token>
+<token t_id="455" sentence="14" number="454">instead</token>
+<token t_id="456" sentence="14" number="455">.</token>
+<token t_id="457" sentence="15" number="456">A</token>
+<token t_id="458" sentence="15" number="457">guest</token>
+<token t_id="459" sentence="15" number="458">can</token>
+<token t_id="460" sentence="15" number="459">beat</token>
+<token t_id="461" sentence="15" number="460">the</token>
+<token t_id="462" sentence="15" number="461">system</token>
+<token t_id="463" sentence="15" number="462">by</token>
+<token t_id="464" sentence="15" number="463">simply</token>
+<token t_id="465" sentence="15" number="464">patronizing</token>
+<token t_id="466" sentence="15" number="465">a</token>
+<token t_id="467" sentence="15" number="466">bar</token>
+<token t_id="468" sentence="15" number="467">that</token>
+<token t_id="469" sentence="15" number="468">offers</token>
+<token t_id="470" sentence="15" number="469">inexpensive</token>
+<token t_id="471" sentence="15" number="470">drinks</token>
+<token t_id="472" sentence="15" number="471">during</token>
+<token t_id="473" sentence="15" number="472">all</token>
+<token t_id="474" sentence="15" number="473">of</token>
+<token t_id="475" sentence="15" number="474">its</token>
+<token t_id="476" sentence="15" number="475">hours</token>
+<token t_id="477" sentence="15" number="476">of</token>
+<token t_id="478" sentence="15" number="477">operations</token>
+<token t_id="479" sentence="15" number="478">.</token>
+<token t_id="480" sentence="16" number="479">We</token>
+<token t_id="481" sentence="16" number="480">should</token>
+<token t_id="482" sentence="16" number="481">instead</token>
+<token t_id="483" sentence="16" number="482">be</token>
+<token t_id="484" sentence="16" number="483">addressing</token>
+<token t_id="485" sentence="16" number="484">this</token>
+<token t_id="486" sentence="16" number="485">issue</token>
+<token t_id="487" sentence="16" number="486">at</token>
+<token t_id="488" sentence="16" number="487">the</token>
+<token t_id="489" sentence="16" number="488">core</token>
+<token t_id="490" sentence="16" number="489">with</token>
+<token t_id="491" sentence="16" number="490">responsible</token>
+<token t_id="492" sentence="16" number="491">service</token>
+<token t_id="493" sentence="16" number="492">.</token>
+<token t_id="494" sentence="17" number="493">In</token>
+<token t_id="495" sentence="17" number="494">lieu</token>
+<token t_id="496" sentence="17" number="495">of</token>
+<token t_id="497" sentence="17" number="496">happy</token>
+<token t_id="498" sentence="17" number="497">hour</token>
+<token t_id="499" sentence="17" number="498">bans</token>
+<token t_id="500" sentence="17" number="499">,</token>
+<token t_id="501" sentence="17" number="500">I</token>
+<token t_id="502" sentence="17" number="501">'d</token>
+<token t_id="503" sentence="17" number="502">like</token>
+<token t_id="504" sentence="17" number="503">to</token>
+<token t_id="505" sentence="17" number="504">see</token>
+<token t_id="506" sentence="17" number="505">legislature</token>
+<token t_id="507" sentence="17" number="506">that</token>
+<token t_id="508" sentence="17" number="507">requires</token>
+<token t_id="509" sentence="17" number="508">all</token>
+<token t_id="510" sentence="17" number="509">food</token>
+<token t_id="511" sentence="17" number="510">and</token>
+<token t_id="512" sentence="17" number="511">beverage</token>
+<token t_id="513" sentence="17" number="512">establishments</token>
+<token t_id="514" sentence="17" number="513">to</token>
+<token t_id="515" sentence="17" number="514">annually</token>
+<token t_id="516" sentence="17" number="515">certify</token>
+<token t_id="517" sentence="17" number="516">all</token>
+<token t_id="518" sentence="17" number="517">employees</token>
+<token t_id="519" sentence="17" number="518">who</token>
+<token t_id="520" sentence="17" number="519">serve</token>
+<token t_id="521" sentence="17" number="520">alcohol</token>
+<token t_id="522" sentence="17" number="521">through</token>
+<token t_id="523" sentence="17" number="522">an</token>
+<token t_id="524" sentence="17" number="523">accredited</token>
+<token t_id="525" sentence="17" number="524">alcohol</token>
+<token t_id="526" sentence="17" number="525">management</token>
+<token t_id="527" sentence="17" number="526">program</token>
+<token t_id="528" sentence="17" number="527">.</token>
+<token t_id="529" sentence="18" number="528">New</token>
+<token t_id="530" sentence="18" number="529">hires</token>
+<token t_id="531" sentence="18" number="530">should</token>
+<token t_id="532" sentence="18" number="531">be</token>
+<token t_id="533" sentence="18" number="532">put</token>
+<token t_id="534" sentence="18" number="533">through</token>
+<token t_id="535" sentence="18" number="534">the</token>
+<token t_id="536" sentence="18" number="535">program</token>
+<token t_id="537" sentence="18" number="536">before</token>
+<token t_id="538" sentence="18" number="537">they</token>
+<token t_id="539" sentence="18" number="538">start</token>
+<token t_id="540" sentence="18" number="539">.</token>
+<token t_id="541" sentence="19" number="540">I</token>
+<token t_id="542" sentence="19" number="541">'ve</token>
+<token t_id="543" sentence="19" number="542">participated</token>
+<token t_id="544" sentence="19" number="543">in</token>
+<token t_id="545" sentence="19" number="544">a</token>
+<token t_id="546" sentence="19" number="545">number</token>
+<token t_id="547" sentence="19" number="546">of</token>
+<token t_id="548" sentence="19" number="547">such</token>
+<token t_id="549" sentence="19" number="548">certifications</token>
+<token t_id="550" sentence="19" number="549">,</token>
+<token t_id="551" sentence="19" number="550">and</token>
+<token t_id="552" sentence="19" number="551">I</token>
+<token t_id="553" sentence="19" number="552">require</token>
+<token t_id="554" sentence="19" number="553">that</token>
+<token t_id="555" sentence="19" number="554">my</token>
+<token t_id="556" sentence="19" number="555">entire</token>
+<token t_id="557" sentence="19" number="556">staff</token>
+<token t_id="558" sentence="19" number="557">be</token>
+<token t_id="559" sentence="19" number="558">certified</token>
+<token t_id="560" sentence="19" number="559">.</token>
+<token t_id="561" sentence="20" number="560">Every</token>
+<token t_id="562" sentence="20" number="561">establishment</token>
+<token t_id="563" sentence="20" number="562">has</token>
+<token t_id="564" sentence="20" number="563">an</token>
+<token t_id="565" sentence="20" number="564">obligation</token>
+<token t_id="566" sentence="20" number="565">to</token>
+<token t_id="567" sentence="20" number="566">ensure</token>
+<token t_id="568" sentence="20" number="567">the</token>
+<token t_id="569" sentence="20" number="568">safety</token>
+<token t_id="570" sentence="20" number="569">of</token>
+<token t_id="571" sentence="20" number="570">its</token>
+<token t_id="572" sentence="20" number="571">guests</token>
+<token t_id="573" sentence="20" number="572">at</token>
+<token t_id="574" sentence="20" number="573">all</token>
+<token t_id="575" sentence="20" number="574">times</token>
+<token t_id="576" sentence="20" number="575">--</token>
+<token t_id="577" sentence="20" number="576">not</token>
+<token t_id="578" sentence="20" number="577">solely</token>
+<token t_id="579" sentence="20" number="578">during</token>
+<token t_id="580" sentence="20" number="579">happy</token>
+<token t_id="581" sentence="20" number="580">hour</token>
+<token t_id="582" sentence="20" number="581">.</token>
+
+
+<Markables>
+<COMMENTED_UPON m_id="1" comment=""  >
+<token_anchor t_id="416"/>
+<token_anchor t_id="417"/>
+<token_anchor t_id="418"/>
+<token_anchor t_id="419"/>
+<token_anchor t_id="420"/>
+<token_anchor t_id="421"/>
+<token_anchor t_id="422"/>
+<token_anchor t_id="423"/>
+<token_anchor t_id="424"/>
+<token_anchor t_id="425"/>
+<token_anchor t_id="426"/>
+<token_anchor t_id="427"/>
+<token_anchor t_id="428"/>
+<token_anchor t_id="429"/>
+<token_anchor t_id="430"/>
+<token_anchor t_id="431"/>
+<token_anchor t_id="432"/>
+<token_anchor t_id="433"/>
+<token_anchor t_id="434"/>
+</COMMENTED_UPON>
+<COMMENTED_UPON m_id="2" comment=""  >
+<token_anchor t_id="142"/>
+<token_anchor t_id="143"/>
+<token_anchor t_id="144"/>
+<token_anchor t_id="145"/>
+<token_anchor t_id="146"/>
+<token_anchor t_id="147"/>
+<token_anchor t_id="148"/>
+<token_anchor t_id="149"/>
+<token_anchor t_id="150"/>
+<token_anchor t_id="151"/>
+<token_anchor t_id="152"/>
+</COMMENTED_UPON>
+<COMMENTED_UPON m_id="3" comment=""  >
+<token_anchor t_id="494"/>
+<token_anchor t_id="495"/>
+<token_anchor t_id="496"/>
+<token_anchor t_id="497"/>
+<token_anchor t_id="498"/>
+<token_anchor t_id="499"/>
+<token_anchor t_id="500"/>
+<token_anchor t_id="501"/>
+<token_anchor t_id="502"/>
+<token_anchor t_id="503"/>
+<token_anchor t_id="504"/>
+<token_anchor t_id="505"/>
+<token_anchor t_id="506"/>
+<token_anchor t_id="507"/>
+<token_anchor t_id="508"/>
+<token_anchor t_id="509"/>
+<token_anchor t_id="510"/>
+<token_anchor t_id="511"/>
+<token_anchor t_id="512"/>
+<token_anchor t_id="513"/>
+<token_anchor t_id="514"/>
+<token_anchor t_id="515"/>
+<token_anchor t_id="516"/>
+<token_anchor t_id="517"/>
+<token_anchor t_id="518"/>
+<token_anchor t_id="519"/>
+<token_anchor t_id="520"/>
+<token_anchor t_id="521"/>
+<token_anchor t_id="522"/>
+<token_anchor t_id="523"/>
+<token_anchor t_id="524"/>
+<token_anchor t_id="525"/>
+<token_anchor t_id="526"/>
+<token_anchor t_id="527"/>
+<token_anchor t_id="528"/>
+</COMMENTED_UPON>
+
+
+</Markables>
+
+<Relations>
+</Relations>
+</Document>
