@@ -3,12 +3,12 @@ import os
 from lxml import etree
 import itertools
 from KafNafParserPy import *
+from naf_information import *
+from cat_information import *
 
 
 variant_C = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantC"
 variant_D = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantD"
-#filename_discussion = "/Users/Chantal/Documents/argmin2016-unshared-task-master/data/variantD/devel/Dd001.txt"
-
 
 
 def get_comments_from_discussion(infilename):
@@ -54,106 +54,22 @@ def get_comments_from_discussion(infilename):
 ###############################################################################
 
 
-def get_text_markable(markable_id, list_markables, list_tokens):
-    '''
-    Reads a CAT file and returns the full text of a markable given its id
-    '''
-    markable_text = ""
-    for markable in list_markables:
-        if markable.get("m_id") == markable_id:
-            markable_tokens = markable.findall("token_anchor")
-            for markable_token in markable_tokens:
-                for token in list_tokens:
-                    if token.get("t_id") == markable_token.get("t_id"):
-                        word = token.text + " "
-                        markable_text = markable_text + word
-    return markable_text
+def get_relevant_sentences(filename_article_cat):
+    relevant_sentences = []
+    infile = open(filename_article_cat, "r")
+    raw = infile.read()
+    root = etree.XML(raw)
+    list_tokens = root.findall("token")
+    list_commented = (root.find("Markables")).findall("COMMENTED_UPON")
+    for commented in list_commented:
+        commented_id = commented.get("m_id")
+        sent_id = get_sent_id(commented_id, list_commented, list_tokens)
+        sentence = get_full_sentence(sent_id, list_tokens)
+        relevant_sentences.append(sentence)
+    infile.close()
+    #print(relevant_sentences)
+    return relevant_sentences
 
-
-def get_sent_id(markable_id, list_markables, list_tokens):
-    '''
-    Reads a CAT file and returns the id of the sentence of a predicate given the predicate id
-    '''
-    for markable in list_markables:
-        if (markable.get("id") or markable.get("m_id")) == markable_id:
-            first_word = markable.findall("token_anchor")[0]
-    for token in list_tokens:
-        if token.get("t_id") == first_word.get("t_id"):
-            sent_id = token.get("sentence")
-            break
-    return sent_id
-
-def get_full_sentence(sent_id, list_tokens):
-    '''
-    Reads a CAT file and returns the full text of a sentence given its id
-    '''
-    sentence = ""
-    for token in list_tokens:
-        if token.get("sentence") == sent_id:
-            word = token.text + " "
-            sentence = sentence + word
-    return sentence
-
-def get_paragraph(sent_id, filename_article_naf):
-    '''
-    Reads a NAF file and returns the full text of a paragraph given a sentence id of this paragraph
-    '''
-    naf = KafNafParser(filename_article_naf)
-    paragraph = ""
-    for token in naf.get_tokens():
-        if sent_id == token.get_sent():
-        #if sent_id == str(int(token.get_sent()) - 1): # sent id CAT different than NAF
-            para_id = token.get_para()
-    for token in naf.get_tokens():
-        if token.get_para() == para_id:
-            paragraph = paragraph + " " + token.get_text()
-    return paragraph, para_id
-
-
-def get_paragraphs_sentences_naf(filename_article_naf):
-    '''
-    Reads a NAF file and returns a dictionary with all sentences for each paragraph {para id: [sentences]}
-    '''
-    naf = KafNafParser(filename_article_naf)
-    sentences = {}
-    sent_id = "1"
-    para_id = "1"
-    sentence = ""
-    for token in naf.get_tokens():
-        if sent_id == token.get_sent():
-            sentence = sentence + " " + token.get_text()
-        else:
-            if not para_id in sentences:
-                sentences[para_id] = [sentence]
-            else:
-                sentences[para_id].append(sentence)
-            sent_id = token.get_sent()
-            para_id = token.get_para()
-            sentence = token.get_text()
-    # Add last sentence
-    if not sentence in sentences[para_id]:
-        sentences[para_id].append(sentence)
-    return sentences
-
-def get_sentences_naf(filename_article_naf):
-    '''
-    Reads a NAF file and returns a dictionary with all sentences {sent id: string}
-    '''
-    naf = KafNafParser(filename_article_naf)
-    sentences = {}
-    sent_id = "1"
-    sentence = ""
-    for token in naf.get_tokens():
-        if sent_id == token.get_sent():
-            sentence = sentence + " " + token.get_text()
-        else:
-            sentences[sent_id] = sentence
-            sent_id = token.get_sent()
-            sentence = token.get_text()
-    # LAST SENTENCE MISSING?
-    #if not sentence in sentences[sent_id]:
-        #sentences[sent_id].append(sentence)
-    return sentences
 
 def get_propositions(filename_article_cat, filename_article_naf):
     '''
