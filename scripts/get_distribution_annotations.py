@@ -3,17 +3,18 @@ Gets all sentences annotated with a COMMENTED_UPON markable and counts how many 
 annotated the same sentence. Writes output to TSV outputfile.
 """
 
-from lxml import etree
 import os
+import csv
 from cat_information import *
+import collections
 
 outfilename = "/Users/Chantal/Desktop/distribution_annotations.csv"
 inputdir = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/VariantC/CAT-with-comments-annotated/devel"
 
 
-def get_relevant_sentences(filename_article_cat):
+def get_annotated_sentences(filename_article_cat):
     """Get all sentences from a CAT file that contain a COMMENTED_UPON markable"""
-    relevant_sentences = []
+    annotated_sentences = []
     infile = open(filename_article_cat, "r")
     raw = infile.read()
     root = etree.XML(raw)
@@ -21,43 +22,71 @@ def get_relevant_sentences(filename_article_cat):
     list_commented = (root.find("Markables")).findall("COMMENTED_UPON")
     for commented in list_commented:
         commented_id = commented.get("m_id")
-        sent_id = get_sent_id(commented_id, list_commented, list_tokens)
-        sentence = get_full_sentence(sent_id, list_tokens)
-        relevant_sentences.append(sentence)
+        sent_ids = get_sent_ids(commented_id, list_commented, list_tokens)
+        for sent_id in sent_ids:
+            sentence = get_full_sentence(sent_id, list_tokens)
+            annotated_sentences.append(sentence)
     infile.close()
-    #print(relevant_sentences)
-    return relevant_sentences
+    #print(annotated_sentences)
+    return annotated_sentences
 
 
 def main(inputdir, outfilename):
-    outfile = open(outfilename, "w")
-    subsets = [name for name in os.listdir(inputdir) if os.path.isdir(os.path.join(inputdir, name))]
-    first_subset = os.path.join(inputdir, subsets[0])
-    for filename_cat in os.listdir(first_subset):
+    # Get names of annotators and create first row of csv file
+    annotators = [name for name in os.listdir(inputdir) if os.path.isdir(os.path.join(inputdir, name))]
+    first_row = ["discussion_id", "comment_id", "sentence"]
+    for annotator in annotators:
+        first_row.append(annotator)
+    first_row.append("total")
+    to_write = [first_row]
+
+    # Get annotated sentences in one file from one annotator
+    first_annotator = os.path.join(inputdir, annotators[0])
+    for filename_cat in os.listdir(first_annotator):
         if filename_cat.endswith(".xml"):
-            filename_cat = os.path.join(first_subset, filename_cat)
-            annotated_sentences = [get_relevant_sentences(filename_cat)]
+            filename_cat = os.path.join(first_annotator, filename_cat)
 
-            # Get other annotated sentences
-            for subset in subsets:
-                filename_cat = filename_cat.replace(subsets[0], subset)
-                annotated_sentences.append(get_relevant_sentences(filename_cat))
+            # Get all sentences (and make sorted list of dictionary)
+            all_sentences = get_all_sentences(filename_cat)
+            all_sentences = collections.OrderedDict(sorted(all_sentences.items()))
+            del all_sentences[0]  # remove first sentence, this is the comment in these files
+            all_sentences = list(all_sentences.values())
 
-            all_annotated_sentences = list(set([item for sublist in annotated_sentences for item in sublist]))
-            relevant_sentences = {}
-            for sentence in all_annotated_sentences:
-                for set_sentences in annotated_sentences:
-                    if sentence in set_sentences:
-                        if sentence not in relevant_sentences:
-                            relevant_sentences[sentence] = 1
-                        else:
-                            relevant_sentences[sentence] += 1
+            # Get all annotated sentences from first annotator
+            annotated_sentences = {}
+            annotations = get_annotated_sentences(filename_cat)
+            annotated_sentences[annotators[0]] = annotations
+            #all_annotated_sentences = [annotations]
 
-            for sentence in relevant_sentences:
-                s = os.path.basename(filename_cat) + "\t" + sentence + "\t" + str(relevant_sentences[sentence]) + "\n"
-                outfile.write(s)
+            # Get annotated sentences in corresponding file from other annotators
+            for annotator in annotators[1:]:
+                #filename = filename_cat.replace(annotators[0], annotator)
+                #filename = os.path.join(os.path.dirname(filename_cat), annotator)
+                filename = os.path.join(inputdir, annotator, os.path.basename(filename_cat))
+                annotations = get_annotated_sentences(filename)
+                annotated_sentences[annotator] = annotations
+                #all_annotated_sentences.append(annotations)
 
-    outfile.close()
+            annotated_sentences = collections.OrderedDict(sorted(annotated_sentences.items()))
+            #print(all_sentences)
+            #print(annotated_sentences)
+
+            # Make list of all needed data and write to output file
+            discussion_id = os.path.basename(filename_cat).split("#")[0]
+            comment_id = "#" + os.path.basename(filename_cat).split("#")[1].split(".")[0]
+            for sentence in all_sentences:
+                data = [discussion_id, comment_id, sentence]
+                for annotator in annotated_sentences:
+                    if sentence in annotated_sentences[annotator]:
+                        data.append(1)
+                    else:
+                        data.append(0)
+                data.append(sum(data[3:]))
+                to_write.append(data)
+
+    with open(outfilename, "w") as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        writer.writerows(to_write)
 
 
 main(inputdir, outfilename)
