@@ -70,7 +70,7 @@ def get_comments_from_discussion(infilename):
 ###############################################################################
 
 
-def get_relevant_sentences(filename_article_cat):
+def get_commented_sentences(filename_article_cat):
     """Finds all sentences that contain a COMMENTED_UPON markable in a CAT file and returns a list of sentences"""
     relevant_sentences = []
     infile = open(filename_article_cat, "r")
@@ -80,11 +80,45 @@ def get_relevant_sentences(filename_article_cat):
     list_commented = (root.find("Markables")).findall("COMMENTED_UPON")
     for commented in list_commented:
         commented_id = commented.get("m_id")
-        sent_id = get_sent_id(commented_id, list_commented, list_tokens)
-        sentence = get_full_sentence(sent_id, list_tokens)
-        relevant_sentences.append(sentence)
+        sent_ids = get_sent_ids(commented_id, list_commented, list_tokens)
+        for sent_id in sent_ids:
+            sentence = get_full_sentence(sent_id, list_tokens)
+            relevant_sentences.append(sentence)
     infile.close()
     #print(relevant_sentences)
+    return relevant_sentences
+
+
+def get_relevant_sentences(inputdir_annotations):
+    relevant_sentences = {}
+    annotators = [name for name in os.listdir(inputdir_annotations) if os.path.isdir(os.path.join(inputdir_annotations, name))]
+
+    # Get annotated sentences in one file from one annotator
+    first_annotator = os.path.join(inputdir_annotations, annotators[0])
+    for filename_cat in os.listdir(first_annotator):
+        if filename_cat.endswith(".xml"):
+            filename_cat = os.path.join(first_annotator, filename_cat)
+            annotated_sentences = [get_relevant_sentences(filename_cat)]
+
+            # Get annotated sentences in corresponding file from other annotators
+            for annotator in annotators:
+                filename_cat = filename_cat.replace(annotators[0], annotator)
+                annotated_sentences.append(get_relevant_sentences(filename_cat))
+
+            # Compare annotations and count number of annotations for each sentence
+            all_annotated_sentences = list(set([item for sublist in annotated_sentences for item in sublist]))
+            relevant_sentences_file = {}
+            for sentence in all_annotated_sentences:
+                for set_sentences in annotated_sentences:
+                    if sentence in set_sentences:
+                        if sentence not in relevant_sentences_file:
+                            relevant_sentences_file[sentence] = 1
+                        else:
+                            relevant_sentences_file[sentence] += 1
+
+            # Create dictionary with key = filename and value = dictionary of sentences with counts
+            relevant_sentences[os.path.basename(filename_cat)] = relevant_sentences_file
+
     return relevant_sentences
 
 
@@ -118,11 +152,12 @@ def get_propositions(filename_article_cat, filename_article_naf):
             arg_id = argument.get("m_id")
             argument_text = get_text_markable(arg_id, list_arguments, list_tokens)
             arguments_texts.append(argument_text)
-        sent_id = get_sent_id(event_id, list_events, list_tokens)
-        sent_id_naf = str(int(sent_id) + 1) # sent id CAT different than NAF
-        sentence = get_full_sentence(sent_id, list_tokens)
-        paragraph, para_id = get_paragraph(sent_id_naf, filename_article_naf)
-        propositions.append([event_text, arguments_texts, sentence, paragraph])
+        sent_ids = get_sent_ids(event_id, list_events, list_tokens)
+        for sent_id in sent_ids:
+            sent_id_naf = str(int(sent_id) + 1) # sent id CAT different than NAF
+            sentence = get_full_sentence(sent_id, list_tokens)
+            paragraph, para_id = get_paragraph(sent_id_naf, filename_article_naf)
+            propositions.append([event_text, arguments_texts, sentence, paragraph])
 
     infile.close()
 
@@ -137,6 +172,11 @@ def main(variant_C, variant_D, option):
     originals_D = os.path.join(variant_D, "original")
     for subdir, dirs, files in os.walk(originals_D):
         for subset in dirs:
+
+            # Get annotations on relevant sentences (NOT FINISHED YET!)
+            #annotations_dir = os.path.join(variant_C, "CAT-with-comments-annotated", subset)
+            #if subset == "devel":
+                #annotated_sentences = get_relevant_sentences(annotations_dir)
 
             # Get all data for each comment in datasets variant D (for development set, crowdsourcing set, test set)
             #all_data = [["debate id", "debate title", "debate description", "article title", "post id", "username", "previous post id", "text comment", "text article", "text event", "arguments", "sentence", "paragraph"]]
