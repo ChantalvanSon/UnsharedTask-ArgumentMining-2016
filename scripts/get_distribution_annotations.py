@@ -8,8 +8,8 @@ import csv
 from cat_information import *
 import collections
 
-outfilename = "/Users/Chantal/Desktop/distribution_annotations.csv"
-inputdir = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/VariantC/CAT-with-comments-annotated/devel"
+outfilename = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/Task1-annotations/distribution_annotations_round1.csv"
+inputdir = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/Task1-annotations/CAT-Round-1/devel"
 
 
 def get_annotated_sentences(filename_article_cat):
@@ -34,7 +34,7 @@ def get_annotated_sentences(filename_article_cat):
 def main(inputdir, outfilename):
     # Get names of annotators and create first row of csv file
     annotators = [name for name in os.listdir(inputdir) if os.path.isdir(os.path.join(inputdir, name))]
-    first_row = ["discussion_id", "comment_id", "sentence"]
+    first_row = ["discussion_id", "comment_id", "sentence", "comment"]
     for annotator in annotators:
         first_row.append(annotator)
     first_row.append("total")
@@ -49,6 +49,7 @@ def main(inputdir, outfilename):
             # Get all sentences (and make sorted list of dictionary)
             all_sentences = get_all_sentences(filename_cat)
             all_sentences = collections.OrderedDict(sorted(all_sentences.items()))
+            comment = all_sentences[0].replace("COMMENT: ", "")
             del all_sentences[0]  # remove first sentence, this is the comment in these files
             all_sentences = list(all_sentences.values())
 
@@ -75,13 +76,13 @@ def main(inputdir, outfilename):
             discussion_id = os.path.basename(filename_cat).split("#")[0]
             comment_id = "#" + os.path.basename(filename_cat).split("#")[1].split(".")[0]
             for sentence in all_sentences:
-                data = [discussion_id, comment_id, sentence]
+                data = [discussion_id, comment_id, sentence, comment]
                 for annotator in annotated_sentences:
                     if sentence in annotated_sentences[annotator]:
                         data.append(1)
                     else:
                         data.append(0)
-                data.append(sum(data[3:]))
+                data.append(sum(data[4:]))
                 to_write.append(data)
 
     with open(outfilename, "w") as f:
