@@ -1,0 +1,530 @@
+<Document doc_name="Dd001#3.txt">
+<token t_id="1" sentence="0" number="0">COMMENT:</token>
+<token t_id="2" sentence="0" number="1">Is</token>
+<token t_id="3" sentence="0" number="2">this</token>
+<token t_id="4" sentence="0" number="3">relevancy</token>
+<token t_id="5" sentence="0" number="4">conversation</token>
+<token t_id="6" sentence="0" number="5">about</token>
+<token t_id="7" sentence="0" number="6">Sweet</token>
+<token t_id="8" sentence="0" number="7">Briar</token>
+<token t_id="9" sentence="0" number="8">College,</token>
+<token t_id="10" sentence="0" number="9">or</token>
+<token t_id="11" sentence="0" number="10">about</token>
+<token t_id="12" sentence="0" number="11">same-sex</token>
+<token t_id="13" sentence="0" number="12">colleges</token>
+<token t_id="14" sentence="0" number="13">in</token>
+<token t_id="15" sentence="0" number="14">general?</token>
+<token t_id="16" sentence="0" number="15">There</token>
+<token t_id="17" sentence="0" number="16">are</token>
+<token t_id="18" sentence="0" number="17">quite</token>
+<token t_id="19" sentence="0" number="18">a</token>
+<token t_id="20" sentence="0" number="19">few</token>
+<token t_id="21" sentence="0" number="20">same-sex</token>
+<token t_id="22" sentence="0" number="21">colleges</token>
+<token t_id="23" sentence="0" number="22">that</token>
+<token t_id="24" sentence="0" number="23">are</token>
+<token t_id="25" sentence="0" number="24">booming</token>
+<token t_id="26" sentence="0" number="25">with</token>
+<token t_id="27" sentence="0" number="26">interested</token>
+<token t_id="28" sentence="0" number="27">applicants</token>
+<token t_id="29" sentence="0" number="28">each</token>
+<token t_id="30" sentence="0" number="29">year:</token>
+<token t_id="31" sentence="0" number="30">Barnard,</token>
+<token t_id="32" sentence="0" number="31">Smith,</token>
+<token t_id="33" sentence="0" number="32">Mount</token>
+<token t_id="34" sentence="0" number="33">Holyoke,</token>
+<token t_id="35" sentence="0" number="34">and</token>
+<token t_id="36" sentence="0" number="35">even</token>
+<token t_id="37" sentence="0" number="36">Wellesley.</token>
+<token t_id="38" sentence="0" number="37">So</token>
+<token t_id="39" sentence="0" number="38">come</token>
+<token t_id="40" sentence="0" number="39">on,</token>
+<token t_id="41" sentence="0" number="40">we</token>
+<token t_id="42" sentence="0" number="41">can't</token>
+<token t_id="43" sentence="0" number="42">use</token>
+<token t_id="44" sentence="0" number="43">one</token>
+<token t_id="45" sentence="0" number="44">college</token>
+<token t_id="46" sentence="0" number="45">as</token>
+<token t_id="47" sentence="0" number="46">an</token>
+<token t_id="48" sentence="0" number="47">omen</token>
+<token t_id="49" sentence="0" number="48">for</token>
+<token t_id="50" sentence="0" number="49">the</token>
+<token t_id="51" sentence="0" number="50">others.</token>
+<token t_id="52" sentence="0" number="51">The</token>
+<token t_id="53" sentence="0" number="52">real</token>
+<token t_id="54" sentence="0" number="53">question</token>
+<token t_id="55" sentence="0" number="54">is</token>
+<token t_id="56" sentence="0" number="55">why</token>
+<token t_id="57" sentence="0" number="56">-</token>
+<token t_id="58" sentence="0" number="57">why</token>
+<token t_id="59" sentence="0" number="58">did</token>
+<token t_id="60" sentence="0" number="59">women</token>
+<token t_id="61" sentence="0" number="60">students</token>
+<token t_id="62" sentence="0" number="61">stop</token>
+<token t_id="63" sentence="0" number="62">applying</token>
+<token t_id="64" sentence="0" number="63">to</token>
+<token t_id="65" sentence="0" number="64">Sweet</token>
+<token t_id="66" sentence="0" number="65">Briar</token>
+<token t_id="67" sentence="0" number="66">specifically?</token>
+<token t_id="68" sentence="0" number="67">Let's</token>
+<token t_id="69" sentence="0" number="68">speak</token>
+<token t_id="70" sentence="0" number="69">about</token>
+<token t_id="71" sentence="0" number="70">that.</token>
+<token t_id="72" sentence="1" number="71">Sweet</token>
+<token t_id="73" sentence="1" number="72">Briar</token>
+<token t_id="74" sentence="1" number="73">Is</token>
+<token t_id="75" sentence="1" number="74">Fighting</token>
+<token t_id="76" sentence="1" number="75">an</token>
+<token t_id="77" sentence="1" number="76">Up-Hill</token>
+<token t_id="78" sentence="1" number="77">Battle</token>
+<token t_id="79" sentence="1" number="78">.</token>
+<token t_id="80" sentence="2" number="79">Despite</token>
+<token t_id="81" sentence="2" number="80">a</token>
+<token t_id="82" sentence="2" number="81">beautiful</token>
+<token t_id="83" sentence="2" number="82">campus</token>
+<token t_id="84" sentence="2" number="83">,</token>
+<token t_id="85" sentence="2" number="84">dedicated</token>
+<token t_id="86" sentence="2" number="85">faculty</token>
+<token t_id="87" sentence="2" number="86">,</token>
+<token t_id="88" sentence="2" number="87">loyal</token>
+<token t_id="89" sentence="2" number="88">alumnae</token>
+<token t_id="90" sentence="2" number="89">and</token>
+<token t_id="91" sentence="2" number="90">a</token>
+<token t_id="92" sentence="2" number="91">significant</token>
+<token t_id="93" sentence="2" number="92">endowment</token>
+<token t_id="94" sentence="2" number="93">,</token>
+<token t_id="95" sentence="2" number="94">Sweet</token>
+<token t_id="96" sentence="2" number="95">Briar</token>
+<token t_id="97" sentence="2" number="96">College</token>
+<token t_id="98" sentence="2" number="97">is</token>
+<token t_id="99" sentence="2" number="98">closing</token>
+<token t_id="100" sentence="2" number="99">after</token>
+<token t_id="101" sentence="2" number="100">114</token>
+<token t_id="102" sentence="2" number="101">years</token>
+<token t_id="103" sentence="2" number="102">.</token>
+<token t_id="104" sentence="3" number="103">Too</token>
+<token t_id="105" sentence="3" number="104">few</token>
+<token t_id="106" sentence="3" number="105">students</token>
+<token t_id="107" sentence="3" number="106">were</token>
+<token t_id="108" sentence="3" number="107">choosing</token>
+<token t_id="109" sentence="3" number="108">Sweet</token>
+<token t_id="110" sentence="3" number="109">Briar</token>
+<token t_id="111" sentence="3" number="110">,</token>
+<token t_id="112" sentence="3" number="111">so</token>
+<token t_id="113" sentence="3" number="112">the</token>
+<token t_id="114" sentence="3" number="113">college</token>
+<token t_id="115" sentence="3" number="114">discounted</token>
+<token t_id="116" sentence="3" number="115">its</token>
+<token t_id="117" sentence="3" number="116">tuition</token>
+<token t_id="118" sentence="3" number="117">rate</token>
+<token t_id="119" sentence="3" number="118">,</token>
+<token t_id="120" sentence="3" number="119">a</token>
+<token t_id="121" sentence="3" number="120">move</token>
+<token t_id="122" sentence="3" number="121">that</token>
+<token t_id="123" sentence="3" number="122">exacerbated</token>
+<token t_id="124" sentence="3" number="123">its</token>
+<token t_id="125" sentence="3" number="124">financial</token>
+<token t_id="126" sentence="3" number="125">problems</token>
+<token t_id="127" sentence="3" number="126">but</token>
+<token t_id="128" sentence="3" number="127">did</token>
+<token t_id="129" sentence="3" number="128">not</token>
+<token t_id="130" sentence="3" number="129">succeed</token>
+<token t_id="131" sentence="3" number="130">in</token>
+<token t_id="132" sentence="3" number="131">attracting</token>
+<token t_id="133" sentence="3" number="132">enough</token>
+<token t_id="134" sentence="3" number="133">students</token>
+<token t_id="135" sentence="3" number="134">.</token>
+<token t_id="136" sentence="4" number="135">As</token>
+<token t_id="137" sentence="4" number="136">a</token>
+<token t_id="138" sentence="4" number="137">small</token>
+<token t_id="139" sentence="4" number="138">,</token>
+<token t_id="140" sentence="4" number="139">rural</token>
+<token t_id="141" sentence="4" number="140">,</token>
+<token t_id="142" sentence="4" number="141">liberal</token>
+<token t_id="143" sentence="4" number="142">arts</token>
+<token t_id="144" sentence="4" number="143">women</token>
+<token t_id="145" sentence="4" number="144">'s</token>
+<token t_id="146" sentence="4" number="145">college</token>
+<token t_id="147" sentence="4" number="146">,</token>
+<token t_id="148" sentence="4" number="147">Sweet</token>
+<token t_id="149" sentence="4" number="148">Briar</token>
+<token t_id="150" sentence="4" number="149">was</token>
+<token t_id="151" sentence="4" number="150">fighting</token>
+<token t_id="152" sentence="4" number="151">an</token>
+<token t_id="153" sentence="4" number="152">up-hill</token>
+<token t_id="154" sentence="4" number="153">battle</token>
+<token t_id="155" sentence="4" number="154">against</token>
+<token t_id="156" sentence="4" number="155">many</token>
+<token t_id="157" sentence="4" number="156">trends</token>
+<token t_id="158" sentence="4" number="157">in</token>
+<token t_id="159" sentence="4" number="158">higher</token>
+<token t_id="160" sentence="4" number="159">education</token>
+<token t_id="161" sentence="4" number="160">.</token>
+<token t_id="162" sentence="5" number="161">Although</token>
+<token t_id="163" sentence="5" number="162">all</token>
+<token t_id="164" sentence="5" number="163">of</token>
+<token t_id="165" sentence="5" number="164">these</token>
+<token t_id="166" sentence="5" number="165">variables</token>
+<token t_id="167" sentence="5" number="166">probably</token>
+<token t_id="168" sentence="5" number="167">contributed</token>
+<token t_id="169" sentence="5" number="168">to</token>
+<token t_id="170" sentence="5" number="169">the</token>
+<token t_id="171" sentence="5" number="170">lack</token>
+<token t_id="172" sentence="5" number="171">of</token>
+<token t_id="173" sentence="5" number="172">student</token>
+<token t_id="174" sentence="5" number="173">interest</token>
+<token t_id="175" sentence="5" number="174">,</token>
+<token t_id="176" sentence="5" number="175">President</token>
+<token t_id="177" sentence="5" number="176">James</token>
+<token t_id="178" sentence="5" number="177">Jones</token>
+<token t_id="179" sentence="5" number="178">,</token>
+<token t_id="180" sentence="5" number="179">Jr.</token>
+<token t_id="181" sentence="5" number="180">acknowledged</token>
+<token t_id="182" sentence="5" number="181">that</token>
+<token t_id="183" sentence="5" number="182">declining</token>
+<token t_id="184" sentence="5" number="183">interest</token>
+<token t_id="185" sentence="5" number="184">in</token>
+<token t_id="186" sentence="5" number="185">single-sex</token>
+<token t_id="187" sentence="5" number="186">education</token>
+<token t_id="188" sentence="5" number="187">was</token>
+<token t_id="189" sentence="5" number="188">decisive</token>
+<token t_id="190" sentence="5" number="189">in</token>
+<token t_id="191" sentence="5" number="190">its</token>
+<token t_id="192" sentence="5" number="191">demise</token>
+<token t_id="193" sentence="5" number="192">.</token>
+<token t_id="194" sentence="6" number="193">Data</token>
+<token t_id="195" sentence="6" number="194">supports</token>
+<token t_id="196" sentence="6" number="195">this</token>
+<token t_id="197" sentence="6" number="196">conclusion</token>
+<token t_id="198" sentence="6" number="197">:</token>
+<token t_id="199" sentence="6" number="198">According</token>
+<token t_id="200" sentence="6" number="199">to</token>
+<token t_id="201" sentence="6" number="200">the</token>
+<token t_id="202" sentence="6" number="201">Women</token>
+<token t_id="203" sentence="6" number="202">'s</token>
+<token t_id="204" sentence="6" number="203">College</token>
+<token t_id="205" sentence="6" number="204">Coalition</token>
+<token t_id="206" sentence="6" number="205">,</token>
+<token t_id="207" sentence="6" number="206">the</token>
+<token t_id="208" sentence="6" number="207">number</token>
+<token t_id="209" sentence="6" number="208">of</token>
+<token t_id="210" sentence="6" number="209">women</token>
+<token t_id="211" sentence="6" number="210">'s</token>
+<token t_id="212" sentence="6" number="211">colleges</token>
+<token t_id="213" sentence="6" number="212">declined</token>
+<token t_id="214" sentence="6" number="213">from</token>
+<token t_id="215" sentence="6" number="214">230</token>
+<token t_id="216" sentence="6" number="215">to</token>
+<token t_id="217" sentence="6" number="216">little</token>
+<token t_id="218" sentence="6" number="217">more</token>
+<token t_id="219" sentence="6" number="218">than</token>
+<token t_id="220" sentence="6" number="219">40</token>
+<token t_id="221" sentence="6" number="220">in</token>
+<token t_id="222" sentence="6" number="221">the</token>
+<token t_id="223" sentence="6" number="222">last</token>
+<token t_id="224" sentence="6" number="223">half-century</token>
+<token t_id="225" sentence="6" number="224">.</token>
+<token t_id="226" sentence="7" number="225">By</token>
+<token t_id="227" sentence="7" number="226">many</token>
+<token t_id="228" sentence="7" number="227">measures</token>
+<token t_id="229" sentence="7" number="228">,</token>
+<token t_id="230" sentence="7" number="229">today</token>
+<token t_id="231" sentence="7" number="230">'s</token>
+<token t_id="232" sentence="7" number="231">women</token>
+<token t_id="233" sentence="7" number="232">are</token>
+<token t_id="234" sentence="7" number="233">flourishing</token>
+<token t_id="235" sentence="7" number="234">in</token>
+<token t_id="236" sentence="7" number="235">higher</token>
+<token t_id="237" sentence="7" number="236">education</token>
+<token t_id="238" sentence="7" number="237">and</token>
+<token t_id="239" sentence="7" number="238">do</token>
+<token t_id="240" sentence="7" number="239">not</token>
+<token t_id="241" sentence="7" number="240">need</token>
+<token t_id="242" sentence="7" number="241">a</token>
+<token t_id="243" sentence="7" number="242">protected</token>
+<token t_id="244" sentence="7" number="243">environment</token>
+<token t_id="245" sentence="7" number="244">to</token>
+<token t_id="246" sentence="7" number="245">develop</token>
+<token t_id="247" sentence="7" number="246">their</token>
+<token t_id="248" sentence="7" number="247">intellectual</token>
+<token t_id="249" sentence="7" number="248">potential</token>
+<token t_id="250" sentence="7" number="249">.</token>
+<token t_id="251" sentence="8" number="250">Women</token>
+<token t_id="252" sentence="8" number="251">are</token>
+<token t_id="253" sentence="8" number="252">enrolled</token>
+<token t_id="254" sentence="8" number="253">in</token>
+<token t_id="255" sentence="8" number="254">higher</token>
+<token t_id="256" sentence="8" number="255">education</token>
+<token t_id="257" sentence="8" number="256">at</token>
+<token t_id="258" sentence="8" number="257">higher</token>
+<token t_id="259" sentence="8" number="258">rates</token>
+<token t_id="260" sentence="8" number="259">than</token>
+<token t_id="261" sentence="8" number="260">men</token>
+<token t_id="262" sentence="8" number="261">and</token>
+<token t_id="263" sentence="8" number="262">achieve</token>
+<token t_id="264" sentence="8" number="263">better</token>
+<token t_id="265" sentence="8" number="264">grades</token>
+<token t_id="266" sentence="8" number="265">.</token>
+<token t_id="267" sentence="9" number="266">Young</token>
+<token t_id="268" sentence="9" number="267">women</token>
+<token t_id="269" sentence="9" number="268">are</token>
+<token t_id="270" sentence="9" number="269">at</token>
+<token t_id="271" sentence="9" number="270">or</token>
+<token t_id="272" sentence="9" number="271">near</token>
+<token t_id="273" sentence="9" number="272">parity</token>
+<token t_id="274" sentence="9" number="273">in</token>
+<token t_id="275" sentence="9" number="274">many</token>
+<token t_id="276" sentence="9" number="275">``</token>
+<token t_id="277" sentence="9" number="276">traditionally</token>
+<token t_id="278" sentence="9" number="277">male</token>
+<token t_id="279" sentence="9" number="278">''</token>
+<token t_id="280" sentence="9" number="279">professions</token>
+<token t_id="281" sentence="9" number="280">including</token>
+<token t_id="282" sentence="9" number="281">law</token>
+<token t_id="283" sentence="9" number="282">and</token>
+<token t_id="284" sentence="9" number="283">medicine</token>
+<token t_id="285" sentence="9" number="284">.</token>
+<token t_id="286" sentence="10" number="285">While</token>
+<token t_id="287" sentence="10" number="286">women</token>
+<token t_id="288" sentence="10" number="287">are</token>
+<token t_id="289" sentence="10" number="288">still</token>
+<token t_id="290" sentence="10" number="289">underrepresented</token>
+<token t_id="291" sentence="10" number="290">in</token>
+<token t_id="292" sentence="10" number="291">positions</token>
+<token t_id="293" sentence="10" number="292">of</token>
+<token t_id="294" sentence="10" number="293">leadership</token>
+<token t_id="295" sentence="10" number="294">and</token>
+<token t_id="296" sentence="10" number="295">in</token>
+<token t_id="297" sentence="10" number="296">some</token>
+<token t_id="298" sentence="10" number="297">,</token>
+<token t_id="299" sentence="10" number="298">but</token>
+<token t_id="300" sentence="10" number="299">not</token>
+<token t_id="301" sentence="10" number="300">all</token>
+<token t_id="302" sentence="10" number="301">,</token>
+<token t_id="303" sentence="10" number="302">math-intensive</token>
+<token t_id="304" sentence="10" number="303">disciplines</token>
+<token t_id="305" sentence="10" number="304">,</token>
+<token t_id="306" sentence="10" number="305">there</token>
+<token t_id="307" sentence="10" number="306">is</token>
+<token t_id="308" sentence="10" number="307">no</token>
+<token t_id="309" sentence="10" number="308">data</token>
+<token t_id="310" sentence="10" number="309">to</token>
+<token t_id="311" sentence="10" number="310">support</token>
+<token t_id="312" sentence="10" number="311">the</token>
+<token t_id="313" sentence="10" number="312">myth</token>
+<token t_id="314" sentence="10" number="313">that</token>
+<token t_id="315" sentence="10" number="314">single-sex</token>
+<token t_id="316" sentence="10" number="315">colleges</token>
+<token t_id="317" sentence="10" number="316">prepare</token>
+<token t_id="318" sentence="10" number="317">women</token>
+<token t_id="319" sentence="10" number="318">better</token>
+<token t_id="320" sentence="10" number="319">to</token>
+<token t_id="321" sentence="10" number="320">become</token>
+<token t_id="322" sentence="10" number="321">leaders</token>
+<token t_id="323" sentence="10" number="322">in</token>
+<token t_id="324" sentence="10" number="323">our</token>
+<token t_id="325" sentence="10" number="324">co-ed</token>
+<token t_id="326" sentence="10" number="325">world</token>
+<token t_id="327" sentence="10" number="326">or</token>
+<token t_id="328" sentence="10" number="327">that</token>
+<token t_id="329" sentence="10" number="328">their</token>
+<token t_id="330" sentence="10" number="329">graduates</token>
+<token t_id="331" sentence="10" number="330">are</token>
+<token t_id="332" sentence="10" number="331">more</token>
+<token t_id="333" sentence="10" number="332">likely</token>
+<token t_id="334" sentence="10" number="333">to</token>
+<token t_id="335" sentence="10" number="334">choose</token>
+<token t_id="336" sentence="10" number="335">math-intensive</token>
+<token t_id="337" sentence="10" number="336">career</token>
+<token t_id="338" sentence="10" number="337">options</token>
+<token t_id="339" sentence="10" number="338">.</token>
+<token t_id="340" sentence="11" number="339">The</token>
+<token t_id="341" sentence="11" number="340">popular</token>
+<token t_id="342" sentence="11" number="341">idea</token>
+<token t_id="343" sentence="11" number="342">that</token>
+<token t_id="344" sentence="11" number="343">single-sex</token>
+<token t_id="345" sentence="11" number="344">education</token>
+<token t_id="346" sentence="11" number="345">benefits</token>
+<token t_id="347" sentence="11" number="346">women</token>
+<token t_id="348" sentence="11" number="347">comes</token>
+<token t_id="349" sentence="11" number="348">from</token>
+<token t_id="350" sentence="11" number="349">anecdotes</token>
+<token t_id="351" sentence="11" number="350">about</token>
+<token t_id="352" sentence="11" number="351">female</token>
+<token t_id="353" sentence="11" number="352">leaders</token>
+<token t_id="354" sentence="11" number="353">who</token>
+<token t_id="355" sentence="11" number="354">were</token>
+<token t_id="356" sentence="11" number="355">educated</token>
+<token t_id="357" sentence="11" number="356">in</token>
+<token t_id="358" sentence="11" number="357">an</token>
+<token t_id="359" sentence="11" number="358">era</token>
+<token t_id="360" sentence="11" number="359">when</token>
+<token t_id="361" sentence="11" number="360">elite</token>
+<token t_id="362" sentence="11" number="361">colleges</token>
+<token t_id="363" sentence="11" number="362">did</token>
+<token t_id="364" sentence="11" number="363">not</token>
+<token t_id="365" sentence="11" number="364">admit</token>
+<token t_id="366" sentence="11" number="365">them</token>
+<token t_id="367" sentence="11" number="366">.</token>
+<token t_id="368" sentence="12" number="367">For</token>
+<token t_id="369" sentence="12" number="368">example</token>
+<token t_id="370" sentence="12" number="369">,</token>
+<token t_id="371" sentence="12" number="370">Hillary</token>
+<token t_id="372" sentence="12" number="371">Clinton</token>
+<token t_id="373" sentence="12" number="372">attended</token>
+<token t_id="374" sentence="12" number="373">Wellesley</token>
+<token t_id="375" sentence="12" number="374">College</token>
+<token t_id="376" sentence="12" number="375">,</token>
+<token t_id="377" sentence="12" number="376">but</token>
+<token t_id="378" sentence="12" number="377">she</token>
+<token t_id="379" sentence="12" number="378">also</token>
+<token t_id="380" sentence="12" number="379">graduated</token>
+<token t_id="381" sentence="12" number="380">from</token>
+<token t_id="382" sentence="12" number="381">Yale</token>
+<token t_id="383" sentence="12" number="382">Law</token>
+<token t_id="384" sentence="12" number="383">School</token>
+<token t_id="385" sentence="12" number="384">,</token>
+<token t_id="386" sentence="12" number="385">which</token>
+<token t_id="387" sentence="12" number="386">was</token>
+<token t_id="388" sentence="12" number="387">co-ed</token>
+<token t_id="389" sentence="12" number="388">.</token>
+
+
+<Markables>
+<COMMENTED_UPON m_id="1" comment=""  >
+<token_anchor t_id="136"/>
+<token_anchor t_id="137"/>
+<token_anchor t_id="138"/>
+<token_anchor t_id="139"/>
+<token_anchor t_id="140"/>
+<token_anchor t_id="141"/>
+<token_anchor t_id="142"/>
+<token_anchor t_id="143"/>
+<token_anchor t_id="144"/>
+<token_anchor t_id="145"/>
+<token_anchor t_id="146"/>
+<token_anchor t_id="147"/>
+<token_anchor t_id="148"/>
+<token_anchor t_id="149"/>
+<token_anchor t_id="150"/>
+<token_anchor t_id="151"/>
+<token_anchor t_id="152"/>
+<token_anchor t_id="153"/>
+<token_anchor t_id="154"/>
+<token_anchor t_id="155"/>
+<token_anchor t_id="156"/>
+<token_anchor t_id="157"/>
+<token_anchor t_id="158"/>
+<token_anchor t_id="159"/>
+<token_anchor t_id="160"/>
+<token_anchor t_id="161"/>
+</COMMENTED_UPON>
+<COMMENTED_UPON m_id="2" comment=""  >
+<token_anchor t_id="162"/>
+<token_anchor t_id="163"/>
+<token_anchor t_id="164"/>
+<token_anchor t_id="165"/>
+<token_anchor t_id="166"/>
+<token_anchor t_id="167"/>
+<token_anchor t_id="168"/>
+<token_anchor t_id="169"/>
+<token_anchor t_id="170"/>
+<token_anchor t_id="171"/>
+<token_anchor t_id="172"/>
+<token_anchor t_id="173"/>
+<token_anchor t_id="174"/>
+<token_anchor t_id="175"/>
+<token_anchor t_id="176"/>
+<token_anchor t_id="177"/>
+<token_anchor t_id="178"/>
+<token_anchor t_id="179"/>
+<token_anchor t_id="180"/>
+<token_anchor t_id="181"/>
+<token_anchor t_id="182"/>
+<token_anchor t_id="183"/>
+<token_anchor t_id="184"/>
+<token_anchor t_id="185"/>
+<token_anchor t_id="186"/>
+<token_anchor t_id="187"/>
+<token_anchor t_id="188"/>
+<token_anchor t_id="189"/>
+<token_anchor t_id="190"/>
+<token_anchor t_id="191"/>
+<token_anchor t_id="192"/>
+<token_anchor t_id="193"/>
+</COMMENTED_UPON>
+<COMMENTED_UPON m_id="3" comment=""  >
+<token_anchor t_id="104"/>
+<token_anchor t_id="105"/>
+<token_anchor t_id="106"/>
+<token_anchor t_id="107"/>
+<token_anchor t_id="108"/>
+<token_anchor t_id="109"/>
+<token_anchor t_id="110"/>
+<token_anchor t_id="111"/>
+<token_anchor t_id="112"/>
+<token_anchor t_id="113"/>
+<token_anchor t_id="114"/>
+<token_anchor t_id="115"/>
+<token_anchor t_id="116"/>
+<token_anchor t_id="117"/>
+<token_anchor t_id="118"/>
+<token_anchor t_id="119"/>
+<token_anchor t_id="120"/>
+<token_anchor t_id="121"/>
+<token_anchor t_id="122"/>
+<token_anchor t_id="123"/>
+<token_anchor t_id="124"/>
+<token_anchor t_id="125"/>
+<token_anchor t_id="126"/>
+<token_anchor t_id="127"/>
+<token_anchor t_id="128"/>
+<token_anchor t_id="129"/>
+<token_anchor t_id="130"/>
+<token_anchor t_id="131"/>
+<token_anchor t_id="132"/>
+<token_anchor t_id="133"/>
+<token_anchor t_id="134"/>
+<token_anchor t_id="135"/>
+</COMMENTED_UPON>
+<COMMENTED_UPON m_id="4" comment=""  >
+<token_anchor t_id="194"/>
+<token_anchor t_id="195"/>
+<token_anchor t_id="196"/>
+<token_anchor t_id="197"/>
+<token_anchor t_id="198"/>
+<token_anchor t_id="199"/>
+<token_anchor t_id="200"/>
+<token_anchor t_id="201"/>
+<token_anchor t_id="202"/>
+<token_anchor t_id="203"/>
+<token_anchor t_id="204"/>
+<token_anchor t_id="205"/>
+<token_anchor t_id="206"/>
+<token_anchor t_id="207"/>
+<token_anchor t_id="208"/>
+<token_anchor t_id="209"/>
+<token_anchor t_id="210"/>
+<token_anchor t_id="211"/>
+<token_anchor t_id="212"/>
+<token_anchor t_id="213"/>
+<token_anchor t_id="214"/>
+<token_anchor t_id="215"/>
+<token_anchor t_id="216"/>
+<token_anchor t_id="217"/>
+<token_anchor t_id="218"/>
+<token_anchor t_id="219"/>
+<token_anchor t_id="220"/>
+<token_anchor t_id="221"/>
+<token_anchor t_id="222"/>
+<token_anchor t_id="223"/>
+<token_anchor t_id="224"/>
+<token_anchor t_id="225"/>
+</COMMENTED_UPON>
+
+
+</Markables>
+
+<Relations>
+</Relations>
+</Document>
