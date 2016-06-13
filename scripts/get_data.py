@@ -7,8 +7,8 @@ from naf_information import *
 from cat_information import *
 
 
-variant_C = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantC"
-variant_D = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantD"
+variant_C = "/Users/Chantal/Documents/Github/UnsharedTask-ACL-2016/data/variantC"
+variant_D = "/Users/Chantal/Documents/Github/UnsharedTask-ACL-2016/data/variantD"
 
 
 ##############################################################################

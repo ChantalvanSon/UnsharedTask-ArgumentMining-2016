@@ -1,13 +1,18 @@
 """
-Reads the original data files (variant C) provided for the Unshared Task on Argumentation Mining 2016 (ACL) and writes
-them in to a new format in a specified outputdir (remove meaningless newlines, debate title and debate description)
+This script uses data provided for the Unshared Task on Argumentation Mining 2016 (ACL).
+
+Input:
+- a directory with editorial articles (stripped, tokenized and converted to CAT format)
+- a directory with discussions (original format) about these articles
+
+Output:
+- a directory with files in CAT format; each file contains in the first line a comment from the discussion,
+and in the remaining lines the different sentences of the editorial article. The names of the files indicate the
+discussion id (e.g. Dd001) and the comment id (e.g. #3).
 """
 
 import os
-
-inputdir_CAT = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantC/CAT-tokenized"
-inputdir_discussion = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantD/original"
-outputdir = "/Users/Chantal/Documents/UnsharedTask-ACL-2016/data/variantC/CAT-with-comments"
+import sys
 
 
 def get_comments_from_discussion(infilename):
@@ -47,37 +52,50 @@ def get_comments_from_discussion(infilename):
 
     return discussion_data
 
+def write_cat_files(inputdir_CAT, inputdir_discussion, outputdir):
+    # Create output directory
+    if not os.path.exists(outputdir):
+        os.makedirs(outputdir)
+    # Go through each editorial article
+    for filename in os.listdir(inputdir_CAT):
+        if filename.endswith(".txt"):
+            print("Processing:", filename)
+
+            # Get text from article in CAT tokenized format
+            filename_article = os.path.join(inputdir_CAT, filename)
+            infile = open(filename_article, "r")
+            text_article = infile.read()
+            infile.close()
+
+            # Get corresponding discussion data
+            filename_discussion = os.path.join(inputdir_discussion, filename.replace("C", "D"))
+            discussion_data = get_comments_from_discussion(filename_discussion)
+            for comment in discussion_data:
+                text_comment = "COMMENT: " + comment[-1].replace("<br/>", "").replace("  ", " ")
+                post_id = comment[0].replace(".txt", "") + comment[4] + ".txt"
+                outfilename = os.path.join(outputdir, post_id)
+                to_write = text_comment.replace(" ", "\n") + "\n<EOS>\n" + text_article
+                outfile = open(outfilename, "w")
+                outfile.write(to_write)
+                outfile.close()
+    return
 
 
-def main(inputdir_CAT, inputdir_discussion, outputdir):
-    for subdir, dirs, files in os.walk(inputdir_CAT):
-        for subset in dirs:
-            outdir = os.path.join(outputdir, subset)
-            if not os.path.exists(outdir):
-                os.makedirs(outdir)
-            for filename in os.listdir(os.path.join(subdir, subset)):
-                if filename.endswith(".txt"):
-                    print("Processing:", filename)
+def main(argv=None):
+    if argv is None:
+        argv = sys.argv
+        if len(argv) < 4:
+            print("Error. Usage: python write_cat_files.py inputdir_articles inputdir_discussions outputdir")
+        else:
+            write_cat_files(argv[1], argv[2], argv[3])
 
-                    # Get text from article in CAT tokenized format
-                    filename_article = os.path.join(inputdir_CAT, subdir, subset, filename)
-                    infile = open(filename_article, "r")
-                    text_article = infile.read()
-                    infile.close()
 
-                    # Get corresponding discussion data
-                    filename_discussion = os.path.join(inputdir_discussion, subset, filename.replace("C", "D"))
-                    discussion_data = get_comments_from_discussion(filename_discussion)
-                    for comment in discussion_data:
-                        text_comment = "COMMENT: " + comment[-1].replace("<br/>", "").replace("  ", " ")
-                        post_id = comment[0].replace(".txt", "") + comment[4] + ".txt"
-                        outfilename = os.path.join(outdir, post_id)
-                        to_write = text_comment.replace(" ", "\n") + "\n<EOS>\n" + text_article
-                        outfile = open(outfilename, "w")
-                        outfile.write(to_write)
-                        outfile.close()
+if __name__ == '__main__':
+    main()
 
 
 
-
-main(inputdir_CAT, inputdir_discussion, outputdir)
+#inputdir_CAT = "/Users/Chantal/Documents/Github/UnsharedTask-ArgumentMining-2016/data/editorial_articles/4-CAT-tokenized"
+#inputdir_discussion = "/Users/Chantal/Documents/Github/UnsharedTask-ArgumentMining-2016/data/discussions/original"
+#outputdir = "/Users/Chantal/Documents/Github/UnsharedTask-ArgumentMining-2016/test"
+#write_cat_files(inputdir_CAT, inputdir_discussion, outputdir)
