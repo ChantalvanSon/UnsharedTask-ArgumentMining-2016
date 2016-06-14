@@ -4,9 +4,7 @@ This repository provides the data and code used for the work described in:
 
 > C. van Son, T. Caselli, A. Fokkens, I. Maks, R. Morante, L. Aroyo, and P. Vossen (2016). "Unshared Task at the 3rd Workshop on Argument Mining: perspective based local agreement and disagreement in online debate." In *Proceedings of the 3rd Workshop on Argument Mining*, Berlin, Germany.
 
-This work was conducted in the context of [the Unshared Task of the 3rd Workshop on Argument Mining](http://argmining2016.arg.tech/index.php/home/call-for-papers/unshared-task/). The supplementary data for the Unshared Task was provided [here]( https://github.com/UKPLab/argmin2016-unshared-task). For the annotations described in our paper, we used the development sets of Variants C (editorial articles) and D (discussions).
-
-The annotations were done using the [Content Annotation Tool (CAT)](https://dh.fbk.eu/resources/cat-content-annotation-tool) [2].
+This work was conducted in the context of [the Unshared Task of the 3rd Workshop on Argument Mining](http://argmining2016.arg.tech/index.php/home/call-for-papers/unshared-task/). The supplementary data for the Unshared Task was provided [here]( https://github.com/UKPLab/argmin2016-unshared-task). For the annotations described in our paper, we used the development sets of Variants C (editorial articles) and D (discussions). The annotations were done using the [Content Annotation Tool (CAT)](https://dh.fbk.eu/resources/cat-content-annotation-tool) [2].
 
 ### Data
 The folder `data` contains the texts that were annotated as described in our paper. The texts have been pre-processed in several steps, resulting in different formats.
